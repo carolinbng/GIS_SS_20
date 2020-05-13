@@ -7,14 +7,14 @@ body {
     width: 900px;
     height: 900px;
     border-radius: 50%;
-    background-color: rgba(207, 11, 93, 0.37);
+    background-color:rgba(207, 11, 93, 0.37);
 }
 
 .halbkreis h1{
-    color: white;
+    color: rgb(0, 0, 0);
     padding-top: 500px;
     text-align: center;
-    font-size: 110px;
+    font-size: 100px;
     margin-bottom: 0px;
     font-style: normal;
 }
