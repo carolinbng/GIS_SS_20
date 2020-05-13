@@ -15,3 +15,56 @@ nav {
     padding-left: 10px;
     border-radius: 0 0 10px 10px;
 }
+nav a {
+    text-decoration: none;
+    color:white;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+nav a:hover {
+    color: crimson;
+    font-weight: bolder;
+}
+#header {
+    background-color: rgb(30, 88, 156);
+    height: 900px;
+    width: 900px;
+    border-radius: 50%;
+    margin: -450px auto auto auto;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+}
+#header h1 {
+    padding-top: 40%;
+    font-size: 200px;
+}
+#header p {
+    margin-top: -160px;
+    margin-left: 180px;
+    font-size: 50px;
+}
+#header img {
+    width: 150px;
+    margin-top: -20px;
+}
+.conform {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 20px;
+    width: 300px;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 50px auto 00 auto;
+}
+.info {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    text-align: center;
+    font-size: larger;
+    margin-top: 50px;
+}
+#fotos {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    color:rgb(30, 88, 156);
+    margin: 5% auto 0 auto;
+    height: 800px;
+    text-align: center;
+}
