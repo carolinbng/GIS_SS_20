@@ -4,10 +4,10 @@ body {
 .halbkreis{
     margin-top: -600px;
     margin-left: 10%;
-    width: 1100px;
-    height: 1000px;
+    width: 900px;
+    height: 900px;
     border-radius: 50%;
-    background-color: rgb(161, 31, 37);
+    background-color: rgba(190, 118, 172, 0.692);
 }
 
 .halbkreis h1{
