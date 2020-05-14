@@ -9,6 +9,7 @@ body {
     height: 900px;
     border-radius: 50%;
     background-color:rgba(216, 112, 147, 0.719);
+    text-align: center;
 }
 .halbkreis h1{
     color: rgb(0, 0, 0);
@@ -40,6 +41,7 @@ nav{
     left: 50%;
     height: 35%;
     padding: 5px 10px 0px 10px;
+    text-align: center;
 
 }
 nav a {
