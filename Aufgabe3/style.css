@@ -55,12 +55,13 @@ nav a:hover {
 }
 
 #footer {
-    background-color: rgb(182, 104, 189);
-    color: #aa61aa;
+    background-color: rgba(216, 112, 147, 0.719);
+    color: rgba(216, 112, 147, 0.719);
     padding-bottom: 20px;
     padding-top: 20px;
     border-width: 10;
-    border-color:#3c123f;
+    border-color:#20061c;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
