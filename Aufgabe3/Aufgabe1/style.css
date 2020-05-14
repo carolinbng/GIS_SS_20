@@ -79,3 +79,13 @@ nav a:hover {
     color: rgb(255, 255, 255);
     font-weight: bolder;
 }
+#footer {
+    background-color: rgb(250, 216, 194);
+    color: #aa61aa;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-width: 10;
+    border-color:#3c123f;
+    border-style: solid;
+    border-radius: 10px;
+}

@@ -75,3 +75,13 @@ button {
     padding: 5px;
     border: 5px solid rgb(43, 26, 11);
 }
+#footer {
+    background-color: rgb(250, 216, 194);
+    color: #aa61aa;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-width: 10;
+    border-color:#3c123f;
+    border-style: solid;
+    border-radius: 10px;
+}
