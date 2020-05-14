@@ -58,6 +58,7 @@ form {
     text-align: center;
     width: 790px;
     border: 5px solid rgb(0, 0, 0);
+    margin-left: 18%;
 }
 
 input, textarea {
@@ -65,6 +66,7 @@ input, textarea {
     border: 5px solid rgb(43, 26, 11);
     margin: 5px;
     padding: 5px;
+    margin-left: 18%;
 }
 
 
@@ -74,6 +76,7 @@ button {
     margin: 5px;
     padding: 5px;
     border: 5px solid rgb(43, 26, 11);
+    margin-left: 18%;
 }
 #footer {
     background-color:rgba(216, 112, 147, 0.719);
