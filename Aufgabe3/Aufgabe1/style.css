@@ -12,7 +12,8 @@ body {
 }
 
 .halbkreis h1{
-    color: rgb(0, 0, 0);
+    text-align: left;
+    color: beige;
     padding-top: 500px;
     text-align: center;
     font-size: 100px;
