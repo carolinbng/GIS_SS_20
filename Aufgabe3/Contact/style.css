@@ -57,14 +57,14 @@ nav a:hover {
 form {
     width: 790px;
     border: 4px solid rgb(0, 0, 0);
-    margin-left: 24%;
+    margin-left: 28%;
 }
 
 input, textarea {
     border: 5px solid rgb(0, 0, 0);
     margin: 5px;
     padding: 5px;
-    margin-left: 24%;
+    margin-left: 21%;
 }
 
 
