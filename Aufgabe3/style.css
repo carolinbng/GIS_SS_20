@@ -55,10 +55,10 @@ nav a:hover {
 }
 
 #footer {
-    background-color: rgb(193, 107, 201);
+    background-color: rgb(182, 104, 189);
     color: #aa61aa;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     border-width: 10;
     border-color:#3c123f;
     border-style: solid;
