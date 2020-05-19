@@ -98,4 +98,5 @@ nav a:hover {
 
 .icon a:hover{
     opacity: 0.5;
+    font-weight: bolder;
 }
