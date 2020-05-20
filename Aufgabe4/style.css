@@ -4,8 +4,8 @@ body {
 .obereLeiste{
     margin-top: -600px;
     margin-left: 10%;
-    width: 900px;
-    height: auto;
+    width: auto;
+    height: 900px;
     border-radius: 0%;
     background-color:rgb(255, 255, 255);
     text-align: center;
