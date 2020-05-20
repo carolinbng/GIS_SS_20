@@ -15,9 +15,9 @@ body {
     align-items: center;
 }
 
-.icon a{
-    margin-top:-340px;
-    margin-left: 110px;
+.icon {
+    margin-top:-500px;
+    margin-left: 20;
     height: 130px;
 }
 
