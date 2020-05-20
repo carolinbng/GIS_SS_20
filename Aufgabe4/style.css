@@ -8,9 +8,7 @@ body {
     height: 900px;
     border-radius: 10%;
     background-color:rgb(255, 255, 255);
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
+    
 }
 .icon {
     margin-top:-340px;
