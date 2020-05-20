@@ -3,10 +3,10 @@ body {
 }
 .obereLeiste{
     margin-top: -600px;
-    margin-left: 0%;
+    margin-left: 10%;
     width: 900px;
     height: 900px;
-    border-radius: 0%;
+    border-radius: 10%;
     background-color:rgb(255, 255, 255);
     display: flex; 
     justify-content: center; 
