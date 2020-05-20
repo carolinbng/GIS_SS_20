@@ -12,15 +12,6 @@ body {
     justify-content: center; 
     align-items: center;
 }
-.obereLeiste h1{
-    color: rgb(0, 0, 0);
-    padding-top: 500px;
-    text-align: center;
-    font-size: 100px;
-    margin-bottom: 0px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
 .icon {
     margin-top:-340px;
     margin-left: 110px;
