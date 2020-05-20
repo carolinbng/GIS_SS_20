@@ -1,7 +1,7 @@
 body {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
-.obereLeiste{
+#obereLeiste{
     margin-top: -600px;
     width: auto;
     height: 900px;
@@ -9,10 +9,14 @@ body {
     background-color:rgb(255, 255, 255);
    
 }
-.halbkreis h1{
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
+.logoetc{
+    color: rgb(0, 0, 0);
+    padding-top: 500px;
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 }
 
 .icon {
