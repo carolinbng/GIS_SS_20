@@ -9,6 +9,12 @@ body {
     background-color:rgb(255, 255, 255);
     text-align: center;
 }
+.halbkreis h1{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
 .icon {
     margin-top:-340px;
     margin-left: 110px;
