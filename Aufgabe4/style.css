@@ -45,6 +45,12 @@ img[alt=logo]{
 .liste {
     display: none;
 }
+
+.hauptmenü:hover .liste {
+    display: block;
+    margin-bottom: 0px;
+}
+
 nav a {
     text-decoration: none;
     color:white;
