@@ -1,7 +1,7 @@
 body {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
-#obereLeiste{
+.obereLeiste{
     margin-top: -600px;
     width: auto;
     height: 900px;
