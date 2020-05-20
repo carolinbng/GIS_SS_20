@@ -1,0 +1,11 @@
+body {
+    font-family: sans-serif;
+}
+.obereLeiste{
+    margin-top: -600px;
+    margin-left: 0%;
+    width: 900px;
+    height: 900px;
+    border-radius: 0%;
+    background-color:rgba(255, 255, 255, 0.719);
+}
