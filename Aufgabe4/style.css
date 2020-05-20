@@ -21,3 +21,13 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.icon {
+    margin-top:-340px;
+    margin-left: 110px;
+    height: 130px;
+}
+
+.icon a:hover{
+    opacity: 0.5;
+    font-weight: bolder;
+}
