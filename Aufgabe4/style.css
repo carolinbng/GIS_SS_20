@@ -18,7 +18,7 @@ img[alt=logo]{
 
 .icon {
     margin-top:-500px;
-    margin-left: 70%;
+    margin-left: 90%;
     height: 130px;
 }
 
@@ -46,6 +46,7 @@ img[alt=logo]{
     display: none;
     list-style: none;
     color: white;
+    text-align: center;
 }
 
 .hauptmenü:hover .liste {
@@ -53,6 +54,7 @@ img[alt=logo]{
     margin-bottom: 0px;
     color: white;
     list-style: none;
+    text-align: center;
 }
 
 nav a {
