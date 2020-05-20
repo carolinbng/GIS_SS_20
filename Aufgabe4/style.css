@@ -10,11 +10,7 @@ body {
    
 }
 
-img[alt="logo"]{
-    margin-top: 100px;
-    width: 70px;
-    height: 70px;
-}
+
 
 .icon {
     margin-top:-500px;
