@@ -52,6 +52,7 @@ img[alt=logo]{
     display: block;
     margin-bottom: 0px;
     color: white;
+    list-style: none;
 }
 
 nav a {
