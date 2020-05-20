@@ -10,7 +10,11 @@ body {
    
 }
 
+img[src="logo"]{
+    padding-top: 0px;
+    margin-top: 20px;
 
+}
 
 .icon {
     margin-top:-500px;
