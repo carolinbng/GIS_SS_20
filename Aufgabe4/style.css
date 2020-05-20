@@ -45,11 +45,13 @@ img[alt=logo]{
 .liste {
     display: none;
     list-style: none;
+    color: white;
 }
 
 .hauptmenü:hover .liste {
     display: block;
     margin-bottom: 0px;
+    color: white;
 }
 
 nav a {
