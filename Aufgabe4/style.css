@@ -27,7 +27,7 @@ img[alt=logo]{
     font-weight: bolder;
 }
 
-nav{
+.hauptmenü{
     position: sticky;
     top: 0;
     color: white;
@@ -41,6 +41,9 @@ nav{
     padding: 5px 10px 0px 10px;
     text-align: center;
 
+}
+.liste {
+    display: none;
 }
 nav a {
     text-decoration: none;
