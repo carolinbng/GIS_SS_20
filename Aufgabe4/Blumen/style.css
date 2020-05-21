@@ -19,12 +19,12 @@ main div{
 }
 
 main div:hover{
-    border-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
 }
 
 .blume div{
         border: 2px solid rgb(0, 0, 0);
-        box-shadow: 0pt 2px 5px rgba(62, 163, 199, 0.7);
+        box-shadow: 0pt 2px 5px rgba(255, 255, 255, 0.7);
         max-width: 450px;
         max-height: 450px;
         display: inline-block;
