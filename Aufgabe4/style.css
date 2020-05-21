@@ -12,6 +12,11 @@ body {
     top:0;
 }
 
+.warenkorb{
+    margin-right: auto;
+    width: 10%;
+}
+
 #header h1{
     font-family: Courier, monospace;
     font-size: 60px;
@@ -40,7 +45,4 @@ main{
     top:0;
 }
 
-.warenkorb {
-
-}
 
