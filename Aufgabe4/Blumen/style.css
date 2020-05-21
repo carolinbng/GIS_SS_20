@@ -20,7 +20,7 @@ main div{
 }
 
 main div:hover{
-    border-color: rgb(90, 84, 84);
+    border-color: rgb(255, 255, 255);
 }
 
 .blume div{
@@ -70,9 +70,11 @@ main div:hover{
 
 #überschrift{
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    background-color: white;
 }
 
 .preis{
     font-style: normal; font-weight: 700;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    background-color: white;
 }
