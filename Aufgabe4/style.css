@@ -16,6 +16,7 @@ header{
 
 header h1{
     text-align: center;
+    position: relative;
     top: 0;
 }
 
@@ -23,7 +24,7 @@ header h1{
     margin: auto;
     margin-left: 0px;
     margin-top: 0px; 
-    width: 100%;
+    width: 50%;
     height: 100px;
     padding: 24px;
     border-radius: 0px;
