@@ -5,7 +5,7 @@ body {
 }
 
 #header {
-    background-color: rgba(172, 123, 161, 0.863);
+    background-image: linear-gradient(rgb(0, 71, 119),rgb(0, 154, 255));
     text-align: center;
     word-spacing: 100px;
     padding: 10px;
@@ -13,17 +13,16 @@ body {
     top:0;
 }
 #header img{
-    width: 50%;
+    width: 10%;
 }
 #header a {
     text-decoration: none;
-    color: rgba(172, 123, 161, 0.863);
+    color: white;
     padding: 10px;
 }
 #header a:hover{
-    background-color: rgba(172, 123, 161, 0.863);
+    background-color: rgb(0, 71, 119);
 }
-
 main{
     text-align: right;
 }
