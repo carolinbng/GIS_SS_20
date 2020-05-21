@@ -12,6 +12,12 @@ body {
     position: sticky;
     top:0;
 }
+
+#header h1{
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: medium;
+}
+
 #header img{
     width: 15%;
 }
