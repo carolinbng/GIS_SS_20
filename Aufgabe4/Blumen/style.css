@@ -1,0 +1,43 @@
+main{
+    min-height: 600px;
+}
+
+main div{
+    display: inline-block;
+    width: 95%;
+    border-style: solid;
+    margin-right: auto;
+    margin-left:auto;
+    transition: all 2s ease-in-out 0s;
+}
+
+main div:hover{
+    border-color: rgb(90, 84, 84);
+}
+
+.ag>img{
+    float: left;
+    width: 95%;
+    margin: 5px;
+    
+}
+.blume button{
+    float: none;
+    background-color: rgba(172, 123, 161, 0.863);
+    padding:10px 5px;
+    color: white;
+    border-radius: 5px;
+    border-color: rgba(172, 123, 161, 0.863);
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.blume button:hover{
+    background-color: white;
+    color:rgba(172, 123, 161, 0.863);
+}
+
+.blume ul{
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+}
