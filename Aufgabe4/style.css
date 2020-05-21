@@ -11,9 +11,9 @@ body {
    
 }
 header h1{
-    position: relative;
-    top: 50px;
-    font-size: 70px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
