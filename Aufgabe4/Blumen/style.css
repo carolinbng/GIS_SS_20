@@ -60,3 +60,8 @@ main div:hover{
 #überschrift{
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
+
+.preis{
+    font-style: normal; font-weight: 700;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
