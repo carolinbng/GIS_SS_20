@@ -2,7 +2,7 @@ body {
     background-image: url("hintergrundfarbe.jpg");
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
-.obereLeiste{
+header{
     margin-top: -600px;
     width: auto;
     height: 900px;
