@@ -19,6 +19,7 @@ main div:hover{
     display: block;
     margin-bottom: 10px;
     min-height: min-content;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 
 
@@ -37,6 +38,7 @@ main div:hover{
     border-color: rgba(172, 123, 161, 0.863);
     font-size: large;
     margin-bottom: 5px;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 
 .blume button:hover{
@@ -47,4 +49,5 @@ main div:hover{
 .blume ul{
     list-style: none;
     padding: 0px 0px 0px 0px;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
