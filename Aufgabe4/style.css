@@ -5,7 +5,7 @@ body {
 }
 
 #header {
-    background-image: linear-gradient(rgb(255, 255, 255)47);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     word-spacing: 100px;
     padding: 10px;
