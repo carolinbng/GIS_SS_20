@@ -10,6 +10,12 @@ body {
     background-color:rgb(255, 255, 255);
    
 }
+header h1{
+    position: relative;
+    top: 50px;
+    font-size: 70px;
+}
+
 
 img[src="logo"]{
     margin-top: -500px;
