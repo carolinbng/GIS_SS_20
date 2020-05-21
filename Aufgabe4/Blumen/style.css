@@ -1,3 +1,8 @@
+body {
+    background-image: url("hintergrundfarbe.jpg");
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
 main{
     min-height: 600px;
 }
