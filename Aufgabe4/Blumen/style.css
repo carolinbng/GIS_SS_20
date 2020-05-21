@@ -15,7 +15,14 @@ main div:hover{
     border-color: rgb(90, 84, 84);
 }
 
-.ag>img{
+.blume{
+    display: block;
+    margin-bottom: 10px;
+    min-height: min-content;
+}
+
+
+.blume>img{
     float: left;
     width: 95%;
     margin: 5px;
