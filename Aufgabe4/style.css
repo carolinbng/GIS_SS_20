@@ -5,7 +5,7 @@ body {
 }
 
 #header {
-    background-image: linear-gradient(rgba(196, 138, 173, 0.801),rgb(255, 255, 255));
+    background-image: linear-gradient(rgba(179, 110, 151, 0.658),rgb(255, 255, 255));
     text-align: center;
     word-spacing: 100px;
     padding: 10px;
@@ -40,7 +40,7 @@ main{
     top:0;
 }
 
-.warenkorb{
-    margin-right: auto;
+.warenkorb {
+
 }
 
