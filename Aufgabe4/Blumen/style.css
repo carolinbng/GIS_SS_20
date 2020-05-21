@@ -24,7 +24,7 @@ main div:hover{
 
 .blume>img{
     float: left;
-    width: 95%;
+    width: 40%;
     margin: 5px;
     
 }
@@ -33,7 +33,7 @@ main div:hover{
     background-color: rgba(172, 123, 161, 0.863);
     padding:10px 5px;
     color: white;
-    border-radius: 5px;
+    border-radius: 0;
     border-color: rgba(172, 123, 161, 0.863);
     font-size: large;
     margin-bottom: 5px;
