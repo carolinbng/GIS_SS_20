@@ -18,7 +18,7 @@ body {
 }
 
 #header img{
-    width: 50%;
+    width: 30%;
 }
 #header a {
     text-decoration: none;
@@ -37,10 +37,6 @@ main{
     color: rgba(0, 0, 0, 0.719);
     padding-bottom: 10px;
     padding-top: 10px;
-    border-width: 10;
-    border-color:#9e7b7b;
-    border-style: solid;
-    border-radius: 0px;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 
