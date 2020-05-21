@@ -34,7 +34,7 @@ main{
 }
 
 #footer {
-    background-color:rgba(216, 112, 147, 0.719);
+    background-image: linear-gradient(rgb(255, 255, 255),rgba(196, 138, 173, 0.801));
     color: rgba(0, 0, 0, 0.719);
     padding-bottom: 10px;
     padding-top: 10px;
@@ -48,5 +48,6 @@ main{
 #footer footer{
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     color: rgba(0, 0, 0, 0.719);
+    text-decoration: none;
 }
 
