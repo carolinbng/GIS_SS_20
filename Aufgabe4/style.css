@@ -28,6 +28,8 @@ header h1{
     padding: 24px;
     border-radius: 0px;
     font-size: 20px;
+    color: white;
+    background-color: rgba(196, 138, 173, 0.801);
 }
 
 
