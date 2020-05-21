@@ -78,3 +78,7 @@ main div:hover{
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     background-color: white;
 }
+
+article{
+    background-color: white;
+}
