@@ -38,7 +38,8 @@ main{
 }
 
 .footer {
-    background-image: linear-gradient(rgb(255, 255, 255),rgba(196, 138, 173, 0.801);
+    background-image: linear-gradient(rgb(255, 255, 255),rgba(196, 138, 173, 0.801));
+    margin-top: auto;
     text-align: center;
     word-spacing: 100px;
     padding: 10px;
