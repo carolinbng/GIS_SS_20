@@ -15,7 +15,6 @@ header{
 }
 
 header h1{
-    display: flex;
     text-align: center;
     top: 0px;
 }
