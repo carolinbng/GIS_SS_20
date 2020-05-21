@@ -33,7 +33,8 @@ body {
     background-color: rgba(196, 138, 173, 0.801);
 }
 main{
-    text-align: right;
+    text-align: center;
+    font-size: 60px;
 }
 
 .footer {
