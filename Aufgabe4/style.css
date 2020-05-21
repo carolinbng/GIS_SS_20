@@ -50,6 +50,7 @@ header h1{
     list-style: none;
     color: white;
     text-align: center;
+    text-decoration: none;
 }
 
 .hauptmenü:hover .liste {
