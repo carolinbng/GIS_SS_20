@@ -118,9 +118,10 @@ main div:hover{
     bottom:0;
 }
 
-.footer p{
+.footer a{
     text-decoration: none;
     color: black;
+    padding: 10px;
 }
 
 .footer p:hover{
