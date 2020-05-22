@@ -53,6 +53,12 @@ main div:hover{
     border-color: rgb(0, 0, 0);
 }
 
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .blume div{
         border: 2px solid rgb(0, 0, 0);
         box-shadow: 0pt 2px 5px rgba(255, 255, 255, 0.7);
