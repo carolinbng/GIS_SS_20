@@ -1,3 +1,6 @@
+
+/*Desktop*/
+@media screen and (min-width:720px){
 body {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     text-align: center;
@@ -124,5 +127,18 @@ article{
     color: rgba(196, 138, 173, 0.801);
     text-decoration: none;
 }
+}
 
 
+/* Tablet */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+
+}
+
+
+/* smartphone */
+@media screen and (max-width: 600px) {
+
+    
+}

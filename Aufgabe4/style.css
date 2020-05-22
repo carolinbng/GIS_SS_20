@@ -1,3 +1,6 @@
+
+/*Desktop*/
+@media screen and (min-width:720px){
 body {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     margin-left: auto;
@@ -70,4 +73,90 @@ main{
 .pro h2 {
     font-size: 50px;
 }
+}
 
+
+
+/* Tablet */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+
+}
+
+
+/* smartphone */
+@media screen and (max-width: 600px) {
+    body {
+        font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #header {
+        background-image: linear-gradient(rgba(179, 110, 151, 0.658),rgb(255, 255, 255));
+        text-align: center;
+        word-spacing: 100px;
+        padding: 10px;
+        top:0;
+    }
+    
+    
+    .bildgröße {
+            max-width: 4%;
+        }
+    
+    #header h1{
+        font-size: 20px;
+    }
+    
+    #header img{
+        width: 20%;
+    }
+    #header a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+    }
+    #header a:hover{
+        background-color: rgba(196, 138, 173, 0.801);
+    }
+    main{
+        text-align: center;
+        font-size: 60px;
+    }
+    
+    .footer {
+        background-image: linear-gradient(rgb(255, 255, 255),rgba(196, 138, 173, 0.801));
+        text-align: center;
+        padding: 10px;
+        bottom:0;
+    }
+    
+    .footer p{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .footer p:hover{
+        color: rgba(196, 138, 173, 0.801);
+        text-decoration: none;
+    }
+    
+    .pro div{
+        border: 2px solid rgb(0, 0, 0);
+        box-shadow: 0pt 2px 5px rgba(255, 255, 255, 0.7);
+        max-width: 50px;
+        max-height: 50px;
+        display: inline-block;
+        background: white;
+        padding: 40px 80px 40px 40px;
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+    
+    }
+    
+    .pro h2 {
+        font-size: 50px;
+    }
+    }
+    
