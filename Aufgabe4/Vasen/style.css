@@ -49,6 +49,8 @@ main div:hover{
     border-color: rgb(0, 0, 0);
 }
 
+
+
 .vase div{
         border: 2px solid rgb(0, 0, 0);
         box-shadow: 0pt 2px 5px rgba(255, 255, 255, 0.7);
@@ -112,8 +114,16 @@ article{
 .footer {
     background-image: linear-gradient(rgb(255, 255, 255),rgba(196, 138, 173, 0.801));
     text-align: center;
-    word-spacing: 100px;
     padding: 10px;
     bottom:0;
 }
 
+.footer p{
+    text-decoration: none;
+    color: black;
+}
+
+.footer p:hover{
+    color: rgba(196, 138, 173, 0.801);
+    text-decoration: none;
+}
