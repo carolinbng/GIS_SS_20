@@ -122,10 +122,12 @@ article{
     bottom:0;
 }
 
-.footer p{
+.footer a{
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
+    padding: 10px;
 }
+
 
 .footer p:hover{
     color: rgba(196, 138, 173, 0.801);
