@@ -18,6 +18,7 @@ body {
 
 .bildgröße {
         max-width: 4%;
+        position: sticky;
     }
 
 #header h1 img{
