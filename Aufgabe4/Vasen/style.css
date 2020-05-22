@@ -24,7 +24,7 @@ body {
     font-size: 20px;
 }
 
-#header img{
+#header img [alt=blumenshop]{
     width: 20%;
 }
 #header a {
@@ -111,9 +111,6 @@ main div:hover{
     background-color: white;
 }
 
-article{
-    background-color: white;
-}
 
 .footer {
     background-image: linear-gradient(rgb(255, 255, 255),rgba(196, 138, 173, 0.801));
