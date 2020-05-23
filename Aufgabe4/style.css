@@ -1,15 +1,15 @@
 
 /*Desktop*/
 @media screen and (min-width:720px){
-body {
+body{
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding-top: 250px;
-    }
+}
     
-#header {
+#header{
     background-image: linear-gradient(rgba(196, 138, 173, 1),rgb(255, 255, 255));
     text-align: center;
     word-spacing: 100px;
@@ -17,12 +17,12 @@ body {
     top:0;
     position: fixed;
     width:100%;
-    }
+}
 
-.bildgröße {
+.bildgröße{
         max-width: 4%;
         position: sticky;
-    }
+}
 
 #header h1 img{
     font-size: 20px;
@@ -31,7 +31,7 @@ body {
 #header img[alt=blumenshop]{
     width: 20%;
 }
-#header a {
+#header a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 10px;
@@ -44,7 +44,7 @@ main{
     font-size: 60px;
 }
 
-.footer {
+.footer{
     background-image: linear-gradient(rgb(255, 255, 255),rgba(196, 138, 173, 0.801));
     text-align: center;
     padding: 10px;
@@ -75,7 +75,7 @@ main{
 
 }
 
-.pro h2 {
+.pro h2{
     font-size: 50px;
 }
 }
