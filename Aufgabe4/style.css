@@ -2,20 +2,22 @@
 /*Desktop*/
 @media screen and (min-width:720px){
 body {
-    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-}
-
+        font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 250px;
+    }
+    
 #header {
-    background-image: linear-gradient(rgba(179, 110, 151, 0.658),rgb(255, 255, 255));
-    text-align: center;
-    word-spacing: 100px;
-    padding: 10px;
-    top:0;
-    position: sticky;
-}
-
+        background-image: linear-gradient(rgba(196, 138, 173, 1),rgb(255, 255, 255));
+        text-align: center;
+        word-spacing: 100px;
+        padding: 10px;
+        top:0;
+        position: fixed;
+        width:100%;
+    }
 
 .bildgröße {
         max-width: 4%;
