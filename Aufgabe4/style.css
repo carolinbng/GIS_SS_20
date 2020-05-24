@@ -131,7 +131,7 @@ main{
         bottom:0;
     }
     
-    .footer img[alt=Contact]{
+    .footer a{
         width: 100px;
     }
     
