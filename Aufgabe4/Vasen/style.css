@@ -123,18 +123,6 @@ main div:hover{
     padding: 10px;
     bottom:0;
 }
-
-.footer a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 10px;
-}
-
-
-.footer p:hover{
-    color: rgba(196, 138, 173, 0.801);
-    text-decoration: none;
-}
 }
 
 
@@ -179,7 +167,83 @@ main div:hover{
     }
 
 
-
+    main{
+        min-height: 600px;
+    }
+    
+    main div{
+        display: inline-block;
+        width: 50%;
+        border-style: solid;
+        margin-right: auto;
+        margin-left:auto;
+    
+    }
+    
+    main div:hover{
+        border-color: rgb(0, 0, 0);
+    }
+    
+    
+    
+    .vase div{
+            border: 2px solid rgb(0, 0, 0);
+            box-shadow: 0pt 2px 5px rgba(255, 255, 255, 0.7);
+            max-width: 450px;
+            max-height: 450px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background: white;
+            padding: 40px 80px 40px 40px;
+            margin: 0px 30px 30px 40px;
+            text-align: center;
+        
+        }
+    
+    
+    
+    .vase>img{
+        float: left;
+        width: 50%;
+        margin: 5px;
+        
+    }
+    .vase button{
+        float: none;
+        background-color: rgba(172, 123, 161, 0.863);
+        padding:10px 5px;
+        color: white;
+        border-radius: 0;
+        border-color: rgba(172, 123, 161, 0.863);
+        font-size: large;
+        margin-bottom: 5px;
+        font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    }
+    
+    .vase button:hover{
+        background-color: white;
+        color:rgba(172, 123, 161, 0.863);
+    }
+    
+    .vase ul{
+        list-style: none;
+        padding: 0px 0px 0px 0px;
+        font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+        background-color: white;
+    }
+    
+    #überschrift{
+        font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+        background-color: white;
+    }
+    
+    .preis{
+        font-style: normal; font-weight: 700;
+        font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+        background-color: white;
+    }
+    
 
 
 
