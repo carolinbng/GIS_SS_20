@@ -92,33 +92,35 @@ main{
 
 /* smartphone */
 @media screen and (max-width: 600px) {
-    body {
+    body{
         font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
+        padding-top: 250px;
     }
-    
-    #header {
-        background-image: linear-gradient(rgba(179, 110, 151, 0.658),rgb(255, 255, 255));
+        
+    #header{
+        background-image: linear-gradient(rgba(196, 138, 173, 1),rgb(255, 255, 255));
         text-align: center;
-        word-spacing: 100px;
         padding: 10px;
         top:0;
+        position: fixed;
+        width:100%;
     }
     
-    
-    .bildgröße {
+    .bildgröße{
             max-width: 4%;
-        }
+    }
     
-    #header h1{
+    #header h1 img{
         font-size: 20px;
     }
     
-    #header img{
+    #header img[alt=blumenshop]{
         width: 20%;
     }
-    #header a {
+    #header a{
         text-decoration: none;
         color: rgb(0, 0, 0);
         padding: 10px;
@@ -131,16 +133,19 @@ main{
         font-size: 60px;
     }
     
-    .footer {
+    .footer{
         background-image: linear-gradient(rgb(255, 255, 255),rgba(196, 138, 173, 0.801));
+        word-spacing: 100px;
         text-align: center;
         padding: 10px;
         bottom:0;
+        position: fixed;
     }
     
-    .footer p{
+    .footer a{
         text-decoration: none;
-        color: black;
+        color: rgb(0, 0, 0);
+        padding: 10px;
     }
     
     .footer p:hover{
@@ -161,7 +166,7 @@ main{
     
     }
     
-    .pro h2 {
+    .pro h2{
         font-size: 50px;
     }
     }
