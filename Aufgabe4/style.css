@@ -32,7 +32,8 @@ body{
     width: 20%;
 }
 
-#header a{
+
+.nav ~ a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 10px;
