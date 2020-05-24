@@ -45,9 +45,11 @@ main{
 
 .footer{
     background-image: linear-gradient(rgb(255, 255, 255),rgba(196, 138, 173, 0.801));
+    word-spacing: 100px;
     text-align: center;
     padding: 10px;
     bottom:0;
+    position: fixed;
 }
 
 .footer a{
