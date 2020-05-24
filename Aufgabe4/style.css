@@ -31,15 +31,18 @@ body{
 #header img[alt=blumenshop]{
     width: 20%;
 }
-input ~ a{
+
+#header input ~ a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 10px;
 }
+
 #header a:hover{
     background-color: rgba(196, 138, 173, 0.801);
 }
-main{
+
+br + main{
     text-align: center;
     font-size: 60px;
 }
