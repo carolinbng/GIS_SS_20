@@ -132,7 +132,7 @@ main{
     }
     
     #footer img[alt=Contact]{
-        width: 20%;
+        width: 20px;
     }
     
     .pro div{
@@ -149,7 +149,7 @@ main{
     }
     
     .pro h2{
-        font-size: 50px;
+        font-size: 20px;
     }
     }
     
