@@ -1,7 +1,7 @@
 
 /*Desktop*/
-@media screen and (min-width:720px){
-    
+@media screen and (min-width:1024px){
+
 body{
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     text-align: center;
@@ -139,4 +139,13 @@ main{
         font-size: 20px;
     }
     }
+
+    /* Tablet */
+    @media screen and (max-width: 1024px){
+
+
+
+
+
     
+    }
