@@ -32,11 +32,12 @@ body{
     width: 20%
 }
 
-#header a{
+.navFirstElement ~ a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 10px;
 }
+
 #header a:hover{
     background-color: rgba(196, 138, 173, 0.801);
 }
