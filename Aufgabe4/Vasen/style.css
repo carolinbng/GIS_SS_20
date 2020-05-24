@@ -39,7 +39,7 @@ body{
     background-color: rgba(196, 138, 173, 0.801);
 }
 
-main{
+br + main{
     min-height: 600px;
 }
 
