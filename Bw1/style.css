@@ -7,8 +7,8 @@ body{
     padding-top: 150px;
 }
 
-.rakete:hover { margin-top: -500px }
+.rakete a:hover { margin-top: -500px }
 
-div:hover img[src="welt.png"] { 
+.welt a:hover { 
     transform: rotate(780deg)scale(0.5,0.5);
     transition: 5s }
