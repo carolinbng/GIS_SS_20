@@ -1,5 +1,8 @@
 body{
     background-color: rgba(205, 253, 255, 0.733);
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
