@@ -35,3 +35,19 @@ body{
         position: fixed;
         width:100%;
     }
+
+    .rakete .figureslidein {
+        top: 95%;
+        width: 98%; height:auto; /* auto sorgt für die angezeigte höhe im bild*/
+        margin: 1%;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 600px;
+        /*background-color: rgba(61,139,236,0.6);*/
+        background-color: rgba(255,255,255,0.8);
+        color: black;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+    }
