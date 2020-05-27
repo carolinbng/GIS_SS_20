@@ -65,7 +65,7 @@ main div:hover{
         max-width: 450px;
         max-height: 450px;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: auto;
         justify-content: space-evenly;
         background: white;
         padding: 40px 80px 40px 40px;
