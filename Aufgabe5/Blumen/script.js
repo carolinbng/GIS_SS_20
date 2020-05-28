@@ -29,5 +29,7 @@ var Aufgabe5;
     divBlume.appendChild(breakElement);
     divBlume.appendChild(pPreis);
     divBlume.appendChild(buttonWarenkorb);
+    document.getElementById("artikelListe")?.appendChild(artikelUeberschrift);
+    document.getElementById("artikelListe")?.appendChild(divBlume);
 })(Aufgabe5 || (Aufgabe5 = {}));
 //# sourceMappingURL=script.js.map
