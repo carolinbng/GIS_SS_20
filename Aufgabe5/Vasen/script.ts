@@ -92,8 +92,14 @@ const vase12: Produkt = {
     preis: "12,95€"
 };
 
-
+//array
 
 export let vasen: Produkt[] = [vase1, vase2, vase3, vase4, vase5, vase6, vase7, vase8, vase9, vase10, vase11, vase12];
 
+
+//schleife
+
+for (let index: number = 0; index < vasen.length; index++) {
+
+}
 }
