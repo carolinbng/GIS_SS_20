@@ -96,3 +96,4 @@ const blume12: Produkt = {
 export let blumen: Produkt[] = [blume1, blume2, blume3, blume4, blume5, blume6, blume7, blume8, blume9, blume10, blume11, blume12];
 
 }
+
