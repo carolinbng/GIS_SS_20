@@ -71,7 +71,6 @@ body, html {
 
 
 #fond1 {
-	background-image:url(img/fond1.jpg);
 	background-size:100%;
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -83,7 +82,6 @@ body, html {
 }
 
 #fond2 {
-	background-image:url(img/fond2.jpg);
 	background-size:contain;
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -95,7 +93,6 @@ body, html {
 }
 
 #fond3 {
-	background-image:url(img/fond3.jpg);
 	background-size:contain;
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -129,7 +126,6 @@ body, html {
     
     
     #fond1 {
-        background-image:url(img/fond1.jpg);
         background-size:100%;
         background-repeat:no-repeat;
         background-position:center center;
@@ -141,7 +137,6 @@ body, html {
     }
     
     #fond2 {
-        background-image:url(img/fond2.jpg);
         background-size:contain;
         background-repeat:no-repeat;
         background-position:center center;
@@ -153,7 +148,6 @@ body, html {
     }
     
     #fond3 {
-        background-image:url(img/fond3.jpg);
         background-size:contain;
         background-repeat:no-repeat;
         background-position:center center;
@@ -185,7 +179,6 @@ body, html {
     
     
     #fond1 {
-        background-image:url(img/fond1.jpg);
         background-size:100%;
         background-repeat:no-repeat;
         background-position:center center;
@@ -197,7 +190,6 @@ body, html {
     }
     
     #fond2 {
-        background-image:url(img/fond2.jpg);
         background-size:contain;
         background-repeat:no-repeat;
         background-position:center center;
@@ -209,7 +201,6 @@ body, html {
     }
     
     #fond3 {
-        background-image:url(img/fond3.jpg);
         background-size:contain;
         background-repeat:no-repeat;
         background-position:center center;
@@ -242,7 +233,6 @@ body, html {
     
     
     #fond1 {
-        background-image:url(img/fond1.jpg);
         background-size:100%;
         background-repeat:no-repeat;
         background-position:center center;
@@ -254,7 +244,6 @@ body, html {
     }
     
     #fond2 {
-        background-image:url(img/fond2.jpg);
         background-size:100%;
         background-repeat:no-repeat;
         background-position:center center;
@@ -266,7 +255,6 @@ body, html {
     }
     
     #fond3 {
-        background-image:url(img/fond3.jpg);
         background-size:100%;
         background-repeat:no-repeat;
         background-position:center center;
