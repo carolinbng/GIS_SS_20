@@ -11,16 +11,20 @@ namespace Aufgabe5 {
             artikelUeberschrift.innerHTML = "✿";
         }
         artikelUeberschrift.setAttribute("id", "Überschrift");
+        
         // Container für die Blume
         let divBlume: HTMLElement = document.createElement("div");
         divBlume.setAttribute("class", "blume");
+        
         // Bild
         let imgBlume: HTMLElement = document.createElement("img");
         imgBlume.setAttribute("src", blumen[i].bild);
         imgBlume.setAttribute("alt", "toller Blumenstrauss");
+
         // Name der Blume
         let artikelName: HTMLElement = document.createElement("h3");
         artikelName.innerHTML = blumen[i].name;
+        
         // Beschreibung der Blume
         let artikelBeschreibung: HTMLElement = document.createElement("ul");
         let artikelBeschreibungInhalt: HTMLElement = document.createElement("li");
