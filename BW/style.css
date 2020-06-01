@@ -98,23 +98,12 @@ body, html {
 	background-repeat:no-repeat;
 	background-position:center center;
 	text-align:center;
-    background-color:#ac7098;
-	position:relative;
-	height:100%;
-	width:100%;
-}
-
-#fond4 {
-	background-image:url(img/fond4.jpg);
-	background-size:contain;
-	background-repeat:no-repeat;
-	background-position:center center;
-	text-align:center;
     background-color:#d1a4c2;
 	position:relative;
 	height:100%;
 	width:100%;
 }
+
 }
 
 @media (max-width:600px) {
@@ -163,18 +152,6 @@ body, html {
     
     #fond3 {
         background-image:url(img/fond3.jpg);
-        background-size:contain;
-        background-repeat:no-repeat;
-        background-position:center center;
-        text-align:center;
-        background-color:#ac7098;
-        position:relative;
-        height:100%;
-        width:100%;
-    }
-    
-    #fond4 {
-        background-image:url(img/fond4.jpg);
         background-size:contain;
         background-repeat:no-repeat;
         background-position:center center;
@@ -235,18 +212,6 @@ body, html {
         background-repeat:no-repeat;
         background-position:center center;
         text-align:center;
-        background-color:#ac7098;
-        position:relative;
-        height:100%;
-        width:100%;
-    }
-    
-    #fond4 {
-        background-image:url(img/fond4.jpg);
-        background-size:contain;
-        background-repeat:no-repeat;
-        background-position:center center;
-        text-align:center;
         background-color:#d1a4c2;
         position:relative;
         height:100%;
@@ -300,18 +265,6 @@ body, html {
     
     #fond3 {
         background-image:url(img/fond3.jpg);
-        background-size:100%;
-        background-repeat:no-repeat;
-        background-position:center center;
-        text-align:center;
-        background-color:#ac7098;
-        position:relative;
-        height:100%;
-        width:100%;
-    }
-    
-    #fond4 {
-        background-image:url(img/fond4.jpg);
         background-size:100%;
         background-repeat:no-repeat;
         background-position:center center;
