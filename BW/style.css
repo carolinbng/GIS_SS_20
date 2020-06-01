@@ -18,6 +18,11 @@ body, html {
 	margin-top:40px;
 }
 
+#nav li {
+    margin: 0 0 10px;
+    height: 10px;
+}
+
 	
 #content {
 	width:210px;
