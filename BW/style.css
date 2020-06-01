@@ -27,7 +27,9 @@ body, html {
 }
 
 #nav li a:hover{
-	opacity:1;	
+    opacity:1;	
+    font-weight: bolder;
+}
 }
 
 
