@@ -35,7 +35,7 @@ namespace Aufgabe5 {
         // Preis der Blume
         let pPreis: HTMLElement = document.createElement("p");
         pPreis.setAttribute("class" , "Preis");
-        pPreis.innerHTML = blumen[i].preis;
+        pPreis.innerHTML = blumen[i].preis + " €";
         // Button für den Warenkorb
         let buttonWarenkorb: HTMLElement = document.createElement("button");
         buttonWarenkorb.innerHTML = "In den Warenkorb";
