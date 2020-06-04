@@ -176,7 +176,7 @@ namespace Aufgabe5 {
     
     
     
-    export let Produkt: Produkt[] = [blume1, blume2, blume3, blume4, blume5, blume6, blume7, blume8, blume9, blume10, blume11, blume12, vase1, vase2, vase3, vase4, vase5, vase6, vase7, vase8, vase9, vase10, vase11, vase12];
+    export let produkt: Produkt[] = [blume1, blume2, blume3, blume4, blume5, blume6, blume7, blume8, blume9, blume10, blume11, blume12, vase1, vase2, vase3, vase4, vase5, vase6, vase7, vase8, vase9, vase10, vase11, vase12];
     
     }
     
