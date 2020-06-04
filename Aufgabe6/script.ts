@@ -1,4 +1,4 @@
-namespace Aufgabe5 {
+namespace Aufgabe6 {
 
     // Artikelliste
     for (let i: number = 0; i < produkt.length; i++) {

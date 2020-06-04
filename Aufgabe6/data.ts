@@ -1,4 +1,4 @@
-namespace Aufgabe5 {
+namespace Aufgabe6 {
 
     export interface Produkt {
         bild: string;
