@@ -6,7 +6,7 @@ namespace Aufgabe6 {
         let artikelUeberschrift: HTMLElement = document.createElement("h2");
         // Unterscheide zwischen erster Blume und dem Rest
         if (i == 0) {
-            artikelUeberschrift.innerHTML = "Frische Blumen";
+            artikelUeberschrift.innerHTML = "Frische Blumen und tolle Vasen";
         } else {
             artikelUeberschrift.innerHTML = "✿";
         }

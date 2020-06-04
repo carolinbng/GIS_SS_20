@@ -1,13 +1,13 @@
 "use strict";
-var Aufgabe5;
-(function (Aufgabe5) {
+var Aufgabe6;
+(function (Aufgabe6) {
     // Artikelliste
-    for (let i = 0; i < Aufgabe5.blumen.length; i++) {
+    for (let i = 0; i < Aufgabe6.produkt.length; i++) {
         // Überschrift für die Blume
         let artikelUeberschrift = document.createElement("h2");
         // Unterscheide zwischen erster Blume und dem Rest
         if (i == 0) {
-            artikelUeberschrift.innerHTML = "Frische Blumen";
+            artikelUeberschrift.innerHTML = "Frische Blumen und tolle Vasen";
         }
         else {
             artikelUeberschrift.innerHTML = "✿";
@@ -18,21 +18,21 @@ var Aufgabe5;
         divBlume.setAttribute("class", "blume");
         // Bild
         let imgBlume = document.createElement("img");
-        imgBlume.setAttribute("src", Aufgabe5.blumen[i].bild);
+        imgBlume.setAttribute("src", Aufgabe6.produkt[i].bild);
         imgBlume.setAttribute("alt", "toller Blumenstrauss");
         // Name der Blume
         let artikelName = document.createElement("h3");
-        artikelName.innerHTML = Aufgabe5.blumen[i].name;
+        artikelName.innerHTML = Aufgabe6.produkt[i].name;
         // Beschreibung der Blume
         let artikelBeschreibung = document.createElement("ul");
         let artikelBeschreibungInhalt = document.createElement("li");
-        artikelBeschreibungInhalt.innerHTML = Aufgabe5.blumen[i].beschreibung;
+        artikelBeschreibungInhalt.innerHTML = Aufgabe6.produkt[i].beschreibung;
         artikelBeschreibung.appendChild(artikelBeschreibungInhalt);
         let breakElement = document.createElement("br");
         // Preis der Blume
         let pPreis = document.createElement("p");
         pPreis.setAttribute("class", "Preis");
-        pPreis.innerHTML = Aufgabe5.blumen[i].preis + " €";
+        pPreis.innerHTML = Aufgabe6.produkt[i].preis + " €";
         // Button für den Warenkorb
         let buttonWarenkorb = document.createElement("button");
         buttonWarenkorb.innerHTML = "In den Warenkorb";
@@ -47,5 +47,5 @@ var Aufgabe5;
         document.getElementById("artikelListe")?.appendChild(artikelUeberschrift);
         document.getElementById("artikelListe")?.appendChild(divBlume);
     }
-})(Aufgabe5 || (Aufgabe5 = {}));
+})(Aufgabe6 || (Aufgabe6 = {}));
 //# sourceMappingURL=script.js.map
