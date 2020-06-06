@@ -67,14 +67,8 @@ namespace Aufgabe6 {
     divBlase.id = "blase";
 
     function handleClick(_event: Event): void  {
-        
-        //if (artikelZaehler >= 0) {
-        //  document.getElementById("artikelBlase")?.appendChild(divBlase);
-        //}
 
-        //Zahl in der Blase
-
-        if (artikelZaehler < 1) {
+        if (artikelZaehler >= 0) {
             document.getElementById("div")?.appendChild(divBlase);
         }
         artikelZaehler ++;
@@ -82,11 +76,10 @@ namespace Aufgabe6 {
 
 
 
-        //artikelZaehler++;
-        //zaehlerAnzeigen.innerHTML = "" + artikelZaehler;
-        //document.getElementById("divBlase")?.appendChild(zaehlerAnzeigen);
+
 
         //Summe ausrechnen
+
         
     }}
 
