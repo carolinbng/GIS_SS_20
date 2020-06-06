@@ -56,24 +56,42 @@ namespace Aufgabe6 {
     }
 }
 
+//Ab hier Aufgabe06.01
+
+
 let warenkorbTotal: number = 0;
 let artikelZaehler: number = 0;
-let zaehlerAnzeigen: HTMLParagraphElement = document.createElement("p");
+//let zaehlerAnzeigen: HTMLParagraphElement = document.createElement("p");
 let divBlase: HTMLDivElement = document.createElement("div");
 divBlase.id = "blase";
 
 function handleClick(_event: Event): void  {
-    if (artikelZaehler >= 0) {
-        document.getElementById("artikelBlase")?.appendChild(divBlase);
-    }
+    
+    //if (artikelZaehler >= 0) {
+      //  document.getElementById("artikelBlase")?.appendChild(divBlase);
+    //}
 
     //Zahl in der Blase
-    artikelZaehler++;
-    zaehlerAnzeigen.innerHTML = "" + artikelZaehler;
-    document.getElementById("divBlase")?.appendChild(zaehlerAnzeigen);
+
+    if (artikelZaehler < 1) {
+        document.getElementById("header")?.appendChild(divBlase);
+    }
+    artikelZaehler += 1;
+    divBlase.innerHTML = "" + artikelZaehler;
+
+
+
+    //artikelZaehler++;
+    //zaehlerAnzeigen.innerHTML = "" + artikelZaehler;
+    //document.getElementById("divBlase")?.appendChild(zaehlerAnzeigen);
 
     //Summe ausrechnen
     
-
-
 }
+
+
+
+
+
+//Ab hier Aufgabe06.02
+
