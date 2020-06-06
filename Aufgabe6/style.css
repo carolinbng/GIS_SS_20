@@ -18,6 +18,17 @@
         position: fixed;
         width:100%;
     }
+
+    #blase{
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: white;
+        margin: -25px 0 0 15px;
+        font-size: 10px;
+        font-weight: bolder;
+        color: rgb(0, 71, 119);
+    }
     
     #Blumen, #Vasen{
         background-color: white;

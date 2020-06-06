@@ -31,7 +31,7 @@ namespace Aufgabe6 {
         artikelBeschreibungInhalt.innerHTML = produkt[i].beschreibung;
         artikelBeschreibung.appendChild(artikelBeschreibungInhalt);
         let breakElement: HTMLElement = document.createElement("br");
-        
+
         // Preis der Blume/ Vase
         let pPreis: HTMLElement = document.createElement("p");
         pPreis.setAttribute("class" , "Preis");
@@ -40,6 +40,7 @@ namespace Aufgabe6 {
         // Button für den Warenkorb
         let buttonWarenkorb: HTMLElement = document.createElement("button");
         buttonWarenkorb.innerHTML = "In den Warenkorb";
+        buttonWarenkorb.addEventListener("click", handleClick);
 
         // Füge alle Tags als Kind zu div Container hinzu
         divArtikel.appendChild(imgArtikel);
@@ -55,3 +56,23 @@ namespace Aufgabe6 {
     }
 }
 
+let warenkorbTotal: number = 0;
+let artikelAnzahl: number = 0;
+let divBlase: HTMLDivElement = document.createElement("div");
+divBlase.id = "blase";
+
+function handleClick(_event: Event): void  {
+    if (artikelAnzahl >= 0) {
+        document.getElementById("Blase")?.appendChild(divBlase);
+    }
+    artikelAnzahl++;
+    divBlase.innerHTML = artikelAnzahl + "";
+
+    if ((<HTMLDivElement>_event.currentTarget.parentElement?.getAttribute("blumen")) {
+        let artikelAnzahl = _event.currentTarget.parentElement?.getAttribute("");
+        warenkorbTotal = warenkorbTotal + produkt[zaehler].preis;
+    }
+    else if (_event.currentTarget.parentElement?.getAttribute("vasen")) {
+
+    }
+}
