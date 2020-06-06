@@ -96,27 +96,39 @@ namespace Aufgabe6 {
     //Ein-/Ausblenden der Kategorien
 function handleCategoryClick(this: HTMLElement, _click: MouseEvent): void {
         switch (this.getAttribute("id")) {
-            case "blumenButton":
+            case "blumenB":
                 blumen();
                 break;
-            case "vasenButton":
+            case "vasenB":
                 vasen();
                 break;
         }
         function blumen(): void {
             (<HTMLElement>document.getElementById("blumen")).style.display = "block";
             (<HTMLElement>document.getElementById("vasen")).style.display = "none";
-            (<HTMLElement>document.getElementById("blumenButton")).style.color = "grey";
-            (<HTMLElement>document.getElementById("vasenButton")).style.color = "black";
+            (<HTMLElement>document.getElementById("blumenB")).style.color = "grey";
+            (<HTMLElement>document.getElementById("vasenB")).style.color = "black";
         }
 
         function vasen(): void {
             (<HTMLElement>document.getElementById("blumen")).style.display = "block";
             (<HTMLElement>document.getElementById("vasen")).style.display = "none";
-            (<HTMLElement>document.getElementById("blumenbutton")).style.color = "grey";
-            (<HTMLElement>document.getElementById("vasenButton")).style.color = "black";
+            (<HTMLElement>document.getElementById("blumenB")).style.color = "grey";
+            (<HTMLElement>document.getElementById("vasenB")).style.color = "black";
+
+        }
+
+ 
+        let blumenButton: HTMLElement = <HTMLElement>document.querySelector("#blumenB");
+        blumenButton.addEventListener("click", handleCategoryClick.bind(blumenButton));
+
+        let vasenButton: HTMLElement = <HTMLElement>document.querySelector("#weißweinbtn");
+        vasenButton.addEventListener("click", handleCategoryClick.bind(vasenButton));
+
+        let roseButton: HTMLElement = <HTMLElement>document.querySelector("#rosebtn");
+        roseButton.addEventListener("click", handleCategoryClick.bind(roseButton));
 
         }
 
 
-}
+
