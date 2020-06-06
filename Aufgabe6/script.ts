@@ -59,7 +59,7 @@ namespace Aufgabe6 {
 //Ab hier Aufgabe06.01
 
 
-    let warenkorbTotal: number = 0;
+    //let warenkorbTotal: number = 0;
     let artikelZaehler: number = 0;
 //let zaehlerAnzeigen: HTMLParagraphElement = document.createElement("p");
     let divBlase: HTMLDivElement = document.createElement("div");
