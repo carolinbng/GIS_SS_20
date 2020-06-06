@@ -57,12 +57,12 @@ namespace Aufgabe6 {
     }
 
 
-//Ab hier Aufgabe06.01
+//Aufgabe06.01
 
 
     //let warenkorbTotal: number = 0;
     let artikelZaehler: number = 0;
-//let zaehlerAnzeigen: HTMLParagraphElement = document.createElement("p");
+    //let zaehlerAnzeigen: HTMLParagraphElement = document.createElement("p");
     let divBlase: HTMLDivElement = document.createElement("div");
     divBlase.id = "blase";
 
@@ -75,14 +75,48 @@ namespace Aufgabe6 {
         divBlase.innerHTML = "" + artikelZaehler;
 
 
- //Summe ausrechnen
-    
-        
+    //Summe ausrechnen
+        let kat: string = (<HTMLDivElement>(<HTMLElement>_event.currentTarget).parentElement).getAttribute("id")!;
+        let kat2: string[] = kat.split("artikel");
+        console.log(parseInt(kat2[1]));
+ 
+    // Summe der Preise  
+       // warenkorbTotal = warenkorbTotal + produkt[i].preis;
+        // console.log(warenkorbTotal + "€");
     }}
 
 
 
 
 
-    //Ab hier Aufgabe06.02
+//Ab hier Aufgabe06.02
 
+// ersellung der navigation
+
+    //Ein-/Ausblenden der Kategorien
+function handleCategoryClick(this: HTMLElement, _click: MouseEvent): void {
+        switch (this.getAttribute("id")) {
+            case "blumenButton":
+                blumen();
+                break;
+            case "vasenButton":
+                vasen();
+                break;
+        }
+        function blumen(): void {
+            (<HTMLElement>document.getElementById("blumen")).style.display = "block";
+            (<HTMLElement>document.getElementById("vasen")).style.display = "none";
+            (<HTMLElement>document.getElementById("blumenButton")).style.color = "grey";
+            (<HTMLElement>document.getElementById("vasenButton")).style.color = "black";
+        }
+
+        function vasen(): void {
+            (<HTMLElement>document.getElementById("blumen")).style.display = "block";
+            (<HTMLElement>document.getElementById("vasen")).style.display = "none";
+            (<HTMLElement>document.getElementById("blumenbutton")).style.color = "grey";
+            (<HTMLElement>document.getElementById("vasenButton")).style.color = "black";
+
+        }
+
+
+}
