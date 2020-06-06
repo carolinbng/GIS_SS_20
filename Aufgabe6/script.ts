@@ -30,12 +30,13 @@ namespace Aufgabe6 {
         let artikelBeschreibungInhalt: HTMLElement = document.createElement("li");
         artikelBeschreibungInhalt.innerHTML = produkt[i].beschreibung;
         artikelBeschreibung.appendChild(artikelBeschreibungInhalt);
-
         let breakElement: HTMLElement = document.createElement("br");
+        
         // Preis der Blume/ Vase
         let pPreis: HTMLElement = document.createElement("p");
         pPreis.setAttribute("class" , "Preis");
         pPreis.innerHTML = produkt[i].preis + " €";
+
         // Button für den Warenkorb
         let buttonWarenkorb: HTMLElement = document.createElement("button");
         buttonWarenkorb.innerHTML = "In den Warenkorb";
