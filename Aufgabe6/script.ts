@@ -40,6 +40,7 @@ namespace Aufgabe6 {
         // Button für den Warenkorb
         let buttonWarenkorb: HTMLElement = document.createElement("button");
         buttonWarenkorb.innerHTML = "In den Warenkorb";
+        divArtikel.appendChild(buttonWarenkorb);
         buttonWarenkorb.addEventListener("click", handleClick);
 
         // Füge alle Tags als Kind zu div Container hinzu
@@ -74,9 +75,9 @@ namespace Aufgabe6 {
         //Zahl in der Blase
 
         if (artikelZaehler < 1) {
-            document.getElementById("header")?.appendChild(divBlase);
+            document.getElementById("div")?.appendChild(divBlase);
         }
-        artikelZaehler += 1;
+        artikelZaehler ++;
         divBlase.innerHTML = "" + artikelZaehler;
 
 
