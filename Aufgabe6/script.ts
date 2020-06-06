@@ -2,7 +2,7 @@ namespace Aufgabe6 {
 
     // Artikelliste
     for (let i: number = 0; i < produkt.length; i++) {
-        // Überschrift für die Blume
+        // Überschrift für die Blume/ Vase
         let artikelUeberschrift: HTMLElement = document.createElement("h2");
         // Unterscheide zwischen erster Blume und dem Rest
         if (i == 0) {
@@ -12,27 +12,27 @@ namespace Aufgabe6 {
         }
         artikelUeberschrift.setAttribute("id", "Überschrift");
         
-        // Container für die Blume
-        let divBlume: HTMLElement = document.createElement("div");
-        divBlume.setAttribute("class", "blume");
+        // Container für die Blume/ Vase
+        let divArtikel: HTMLElement = document.createElement("div");
+        divArtikel.setAttribute("class", "blume");
         
         // Bild
-        let imgBlume: HTMLElement = document.createElement("img");
-        imgBlume.setAttribute("src", produkt[i].bild);
-        imgBlume.setAttribute("alt", "toller Blumenstrauss");
+        let imgArtikel: HTMLElement = document.createElement("img");
+        imgArtikel.setAttribute("src", produkt[i].bild);
+        imgArtikel.setAttribute("alt", "toller Blumenstrauss");
 
-        // Name der Blume
+        // Name der Blume/ Vase
         let artikelName: HTMLElement = document.createElement("h3");
         artikelName.innerHTML = produkt[i].name;
         
-        // Beschreibung der Blume
+        // Beschreibung der Blume und Vase
         let artikelBeschreibung: HTMLElement = document.createElement("ul");
         let artikelBeschreibungInhalt: HTMLElement = document.createElement("li");
         artikelBeschreibungInhalt.innerHTML = produkt[i].beschreibung;
         artikelBeschreibung.appendChild(artikelBeschreibungInhalt);
 
         let breakElement: HTMLElement = document.createElement("br");
-        // Preis der Blume
+        // Preis der Blume/ Vase
         let pPreis: HTMLElement = document.createElement("p");
         pPreis.setAttribute("class" , "Preis");
         pPreis.innerHTML = produkt[i].preis + " €";
@@ -41,16 +41,16 @@ namespace Aufgabe6 {
         buttonWarenkorb.innerHTML = "In den Warenkorb";
 
         // Füge alle Tags als Kind zu div Container hinzu
-        divBlume.appendChild(imgBlume);
-        divBlume.appendChild(artikelName);
-        divBlume.appendChild(artikelBeschreibung);
-        divBlume.appendChild(breakElement);
-        divBlume.appendChild(pPreis);
-        divBlume.appendChild(buttonWarenkorb);
+        divArtikel.appendChild(imgArtikel);
+        divArtikel.appendChild(artikelName);
+        divArtikel.appendChild(artikelBeschreibung);
+        divArtikel.appendChild(breakElement);
+        divArtikel.appendChild(pPreis);
+        divArtikel.appendChild(buttonWarenkorb);
 
-        // greife auf den DOM zu und füge Überschrift und Container für die Blume hinzu
+        // greife auf den DOM zu und füge Überschrift und Container für die Blume/ Vasehinzu
         document.getElementById("artikelListe")?.appendChild(artikelUeberschrift);
-        document.getElementById("artikelListe")?.appendChild(divBlume);
+        document.getElementById("artikelListe")?.appendChild(divArtikel);
     }
 }
 
