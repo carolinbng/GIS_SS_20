@@ -75,11 +75,8 @@ namespace Aufgabe6 {
         divBlase.innerHTML = "" + artikelZaehler;
 
 
-
-
-
-        //Summe ausrechnen
-
+ //Summe ausrechnen
+    
         
     }}
 
