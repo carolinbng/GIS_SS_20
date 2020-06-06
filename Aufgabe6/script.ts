@@ -57,22 +57,23 @@ namespace Aufgabe6 {
 }
 
 let warenkorbTotal: number = 0;
-let artikelAnzahl: number = 0;
+let artikelZaehler: number = 0;
+let zaehlerAnzeigen: HTMLParagraphElement = document.createElement("p");
 let divBlase: HTMLDivElement = document.createElement("div");
 divBlase.id = "blase";
 
 function handleClick(_event: Event): void  {
-    if (artikelAnzahl >= 0) {
-        document.getElementById("Blase")?.appendChild(divBlase);
+    if (artikelZaehler >= 0) {
+        document.getElementById("artikelBlase")?.appendChild(divBlase);
     }
-    artikelAnzahl++;
-    divBlase.innerHTML = artikelAnzahl + "";
 
-    if ((<HTMLDivElement>_event.currentTarget.parentElement?.getAttribute("blumen")) {
-        let artikelAnzahl = _event.currentTarget.parentElement?.getAttribute("");
-        warenkorbTotal = warenkorbTotal + produkt[zaehler].preis;
-    }
-    else if (_event.currentTarget.parentElement?.getAttribute("vasen")) {
+    //Zahl in der Blase
+    artikelZaehler++;
+    zaehlerAnzeigen.innerHTML = "" + artikelZaehler;
+    document.getElementById("divBlase")?.appendChild(zaehlerAnzeigen);
 
-    }
+    //Summe ausrechnen
+    
+
+
 }
