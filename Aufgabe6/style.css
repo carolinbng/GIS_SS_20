@@ -19,14 +19,11 @@
         width:100%;
     }
 
-    #blase{
+    .blase{
         background-color:black;
         height: 20px;
         width: 20px;
         border-radius: 50%;
-        position: absolute;
-        right: 20px;
-        top: 100px;
         color: honeydew;
         font-size: 10px;
         text-align: center;
@@ -169,6 +166,16 @@
             top:0;
             position: fixed;
             width:100%;
+        }
+
+        .blase{
+            background-color:black;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            color: honeydew;
+            font-size: 10px;
+            text-align: center;
         }
         
         .bildgröße{
@@ -314,6 +321,16 @@
             top:0;
             position: fixed;
             width:100%;
+        }
+
+        .blase{
+            background-color:black;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            color: honeydew;
+            font-size: 10px;
+            text-align: center;
         }
         
         .bildgröße{
