@@ -79,10 +79,13 @@ namespace Aufgabe6 {
         let kat: string = (<HTMLDivElement>(<HTMLElement>_event.currentTarget).parentElement).getAttribute("id")!;
         let kat2: string[] = kat.split("artikel");
         console.log(parseInt(kat2[1]));
- 
+        
     // Summe der Preise  
-       // warenkorbTotal = warenkorbTotal + produkt[i].preis;
-        // console.log(warenkorbTotal + "€");
+        let warenkorbTotal: number = 0;
+        for (let i: number = 0; i < produkt.length; i++) {
+            warenkorbTotal = warenkorbTotal + produkt[i].preis; 
+        }
+        console.log(warenkorbTotal + "€");  
     }}
 
 
