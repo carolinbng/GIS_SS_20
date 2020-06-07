@@ -55,7 +55,6 @@ var Aufgabe6;
         if (artikelListe) {
             artikelListe.innerHTML = "";
         }
-        console.log(aktuelleKategorie);
         if (location.hash) {
             aktuelleKategorie = location.hash.split("#")[1];
             if (aktuelleKategorie == "home") {
@@ -106,7 +105,6 @@ var Aufgabe6;
     }
     window.onhashchange = locationHashChanged;
     window.onload = pageLoad;
-    //Aufgabe06.01
     //let warenkorbTotal: number = 0;
     let artikelZaehler = 0;
     let warenkorbTotal = 0;
@@ -127,35 +125,4 @@ var Aufgabe6;
         console.log("Aktuelle Warenkorb Summe: " + warenkorbTotal + "€");
     }
 })(Aufgabe6 || (Aufgabe6 = {}));
-//Ab hier Aufgabe06.02
-// ersellung der navigation
-//Ein-/Ausblenden der Kategorien
-function handleCategoryClick(_click) {
-    switch (this.getAttribute("id")) {
-        case "blumenB":
-            blumen();
-            break;
-        case "vasenB":
-            vasen();
-            break;
-    }
-    function blumen() {
-        document.getElementById("blumen").style.display = "block";
-        document.getElementById("vasen").style.display = "none";
-        document.getElementById("blumenB").style.color = "grey";
-        document.getElementById("vasenB").style.color = "black";
-    }
-    function vasen() {
-        document.getElementById("blumen").style.display = "block";
-        document.getElementById("vasen").style.display = "none";
-        document.getElementById("blumenB").style.color = "grey";
-        document.getElementById("vasenB").style.color = "black";
-    }
-    let blumenButton = document.querySelector("#blumenB");
-    blumenButton.addEventListener("click", handleCategoryClick.bind(blumenButton));
-    let vasenButton = document.querySelector("#weißweinbtn");
-    vasenButton.addEventListener("click", handleCategoryClick.bind(vasenButton));
-    let roseButton = document.querySelector("#rosebtn");
-    roseButton.addEventListener("click", handleCategoryClick.bind(roseButton));
-}
 //# sourceMappingURL=script.js.map

@@ -1,7 +1,7 @@
 namespace Aufgabe6 {
 
     export interface Produkt {
-        id: string,
+        id: string;
         bild: string;
         name: string;
         beschreibung: string;

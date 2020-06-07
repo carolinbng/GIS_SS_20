@@ -64,7 +64,7 @@ namespace Aufgabe6 {
         let artikelListe = document.getElementById("artikelListe");
         if (artikelListe) {
             artikelListe.innerHTML = ""; }
-        console.log(aktuelleKategorie);
+
         if (location.hash) {
             aktuelleKategorie = location.hash.split("#")[1];
             if (aktuelleKategorie == "home") {
@@ -117,7 +117,7 @@ namespace Aufgabe6 {
     
     window.onhashchange = locationHashChanged;  
     window.onload = pageLoad;
-//Aufgabe06.01
+
 
    
     //let warenkorbTotal: number = 0;
@@ -143,48 +143,6 @@ namespace Aufgabe6 {
 
 
 
-
-
-//Ab hier Aufgabe06.02
-
-// ersellung der navigation
-
-    //Ein-/Ausblenden der Kategorien
-function handleCategoryClick(this: HTMLElement, _click: MouseEvent): void {
-        switch (this.getAttribute("id")) {
-            case "blumenB":
-                blumen();
-                break;
-            case "vasenB":
-                vasen();
-                break;
-        }
-        function blumen(): void {
-            (<HTMLElement>document.getElementById("blumen")).style.display = "block";
-            (<HTMLElement>document.getElementById("vasen")).style.display = "none";
-            (<HTMLElement>document.getElementById("blumenB")).style.color = "grey";
-            (<HTMLElement>document.getElementById("vasenB")).style.color = "black";
-        }
-
-        function vasen(): void {
-            (<HTMLElement>document.getElementById("blumen")).style.display = "block";
-            (<HTMLElement>document.getElementById("vasen")).style.display = "none";
-            (<HTMLElement>document.getElementById("blumenB")).style.color = "grey";
-            (<HTMLElement>document.getElementById("vasenB")).style.color = "black";
-
-        }
-
- 
-        let blumenButton: HTMLElement = <HTMLElement>document.querySelector("#blumenB");
-        blumenButton.addEventListener("click", handleCategoryClick.bind(blumenButton));
-
-        let vasenButton: HTMLElement = <HTMLElement>document.querySelector("#weißweinbtn");
-        vasenButton.addEventListener("click", handleCategoryClick.bind(vasenButton));
-
-        let roseButton: HTMLElement = <HTMLElement>document.querySelector("#rosebtn");
-        roseButton.addEventListener("click", handleCategoryClick.bind(roseButton));
-
-        }
 
 
 
