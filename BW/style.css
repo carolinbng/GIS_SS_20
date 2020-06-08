@@ -102,6 +102,7 @@ body, html {
     transform: rotateY(180deg);
   }
 
+  
 
 #fond1 {
     background-size:100%;
@@ -133,7 +134,7 @@ body, html {
     text-align:center;
     background: white;
     position:relative;
-    height:150%;
+    height:137%;
     width:100%;
 }
 
@@ -326,7 +327,7 @@ body, html {
 .dot {
     height: 10px;
     width: 10px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     display: inline-block;
   }
@@ -334,7 +335,7 @@ body, html {
   .dot2 {
     height: 10px;
     width: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     border-radius: 50%;
     display: inline-block;
   }
