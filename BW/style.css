@@ -18,9 +18,19 @@ body, html {
     padding: 10px;
     position: absolute;
     top: 300%;
-  }
+}
 
+.arrow1 {
+    border: solid rgb(0, 0, 0);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+}
 
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -150,8 +160,8 @@ body, html {
     background-position:center center;
     text-align:center;
     background: white;
-    position:relative;
-    height:137%;
+    
+    height:140%;
     width:100%;
 }
 
