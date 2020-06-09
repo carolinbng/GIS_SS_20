@@ -9,7 +9,6 @@ body, html {
 
 }
 
-
 .arrow {
     border: solid rgb(255, 255, 255);
     border-width: 0 3px 3px 0;
@@ -388,3 +387,29 @@ body, html {
   }
 
   
+
+  /* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.cont1 {
+    width: 100%; /* Full width */
+    background-color: rgb(82, 82, 82);; /* Grey background */
+}
+
+.skills {
+    text-align: right; /* Right-align text */
+    padding-right: 25px; /* Add some right padding */
+    line-height: 12px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: rgb(255, 255, 255); /* White text color */
+}
+
+.adobe1 {width: 90%; background-color: #ffffff;} 
+.adobe2 {width: 85%; background-color: #ffffff;}
+.adobe3 {width: 89%; background-color: #ffffff;} 
+.adobe4 {width: 88%; background-color: #ffffff;} 
+.ms {width: 90%; background-color: #ffffff;} 
+
+.deutsch {width: 100%; background-color: #ffffff;} 
+.englisch {width: 85%; background-color: #ffffff;}
+.spanisch {width: 50%; background-color: #ffffff;} 
