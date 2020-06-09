@@ -10,7 +10,6 @@ body, html {
 }
 
 
-
 .arrow {
     border: solid rgb(255, 255, 255);
     border-width: 0 3px 3px 0;
@@ -37,7 +36,7 @@ body, html {
 }
 
 /* The hero image */
-.hero-image {
+#hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Hintergrund.JPG");
   
@@ -361,3 +360,31 @@ body, html {
     }
   }
 
+
+
+
+  .cont {
+    position: relative;
+  
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cont:hover .overlay {
+    opacity: 1;
+  }
+
+  
