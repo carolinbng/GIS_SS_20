@@ -563,6 +563,15 @@ body, html {
         max-width: 1200px;
         margin: 0 auto;
       }
+
+      .timeline a{
+        color: #000000;
+     }
+     
+     .timeline a:hover{
+       opacity: 0.5;
+       font-weight: bolder;
+     }
       
       /* The actual timeline (the vertical ruler) */
       .timeline::after {
