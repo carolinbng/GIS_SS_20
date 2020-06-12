@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <script src="data.js"></script>
-    <title>Flower-Power-Shop</title>
+    <script src="warenkorb.js" defer></script>
+    <title>Flower-Power-Shop Warenkorb</title>
 </head>
-
 <body>
-
-    <div id="header">
+<div id="header">
         <h1><img src="img/logo/flowerpowershop.png" alt="blumenshop"></h1>
         <img src="img/logo/logo1.png" alt="blumenshop">
         <nav>
-            <a class="navFirstElement" href="#home">Startseite</a>
-            <a href="#blumen" id="blumenB">Blumen</a>
-            <a href="#vasen" id="vasenB">Vasen</a>
+            <a class="navFirstElement" href="/Aufgabe7/home.html">Startseite</a>
             <input id="Suche" type="text" placeholder="Suche">
             <div id="warenkorbIcon">
                 <a class="blase" id="divBlase"></a>
@@ -29,29 +23,16 @@
         </nav>
     </div>
 
-    <br>
-    <br>
-    <hr>
-    <br>
 
     <main>
-        <div id="artikelListe">
-        </div>
+        
+        <h1>Warenkorb</h1>
+        <div id="artikelListe"></div>
+        <h2>Gesamtwert: <span id="warenkorbWert"></span>€</h2>
+        <button id="alleArtikelEntfernen" class="button">Artikel entfernen</button>
+        
     </main>
 
-    <br>
-    <hr>
-    <br>
-    <br>
-
-    <footer>
-        <div class="footer">
-            <a href="https://www.google.com/search?q=kontakt&oq=kontakt&aqs=chrome..69i57j0l4j69i60j69i61j69i60.1588j0j7&sourceid=chrome&ie=UTF-8"
-                target="_blank">
-                <img src="img/icons/contact1.png" alt="Contact" width="200"></a>
-        </div>
-    </footer>
 
 </body>
-
 </html>

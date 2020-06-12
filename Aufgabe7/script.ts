@@ -3,7 +3,7 @@ namespace Aufgabe6 {
     let aktuelleKategorie: string = "";
 
 
-    function produkteErzeugen(myProducts: Produkt): void {
+    function produkteErzeugen(allProducts: Produkt): void {
         // Überschrift für die Blume/ Vase
         let artikelUeberschrift: HTMLElement = document.createElement("h2");
         // Unterscheide zwischen erster Blume und dem Rest
@@ -13,33 +13,33 @@ namespace Aufgabe6 {
             artikelUeberschrift.innerHTML = "✿";
         }
         artikelUeberschrift.setAttribute("id", "Überschrift");
-        
+
         // Container für die Blume/ Vase
         let divArtikel: HTMLElement = document.createElement("div");
         divArtikel.setAttribute("class", "blume");
-        divArtikel.setAttribute("id", myProducts.id);
+        divArtikel.setAttribute("id", allProducts.id);
 
-        
+
         // Bild
         let imgArtikel: HTMLElement = document.createElement("img");
-        imgArtikel.setAttribute("src", myProducts.bild);
+        imgArtikel.setAttribute("src", allProducts.bild);
         imgArtikel.setAttribute("alt", "toller Blumenstrauss");
 
         // Name der Blume/ Vase
         let artikelName: HTMLElement = document.createElement("h3");
-        artikelName.innerHTML = myProducts.name;
-        
+        artikelName.innerHTML = allProducts.name;
+
         // Beschreibung der Blume und Vase
         let artikelBeschreibung: HTMLElement = document.createElement("ul");
         let artikelBeschreibungInhalt: HTMLElement = document.createElement("li");
-        artikelBeschreibungInhalt.innerHTML = myProducts.beschreibung;
+        artikelBeschreibungInhalt.innerHTML = allProducts.beschreibung;
         artikelBeschreibung.appendChild(artikelBeschreibungInhalt);
         let breakElement: HTMLElement = document.createElement("br");
 
         // Preis der Blume/ Vase
         let pPreis: HTMLElement = document.createElement("p");
-        pPreis.setAttribute("class" , "Preis");
-        pPreis.innerHTML = myProducts.preis + " €";
+        pPreis.setAttribute("class", "Preis");
+        pPreis.innerHTML = allProducts.preis + " €";
 
         // Button für den Warenkorb
         let buttonWarenkorb: HTMLElement = document.createElement("button");
@@ -63,12 +63,15 @@ namespace Aufgabe6 {
     function locationHashChanged(): void {
         let artikelListe = document.getElementById("artikelListe");
         if (artikelListe) {
-            artikelListe.innerHTML = ""; }
+            artikelListe.innerHTML = "";
+        }
         ladeProdukte();
     }
 
     function pageLoad(): void {
-        ladeProdukte();  
+        const blase = document.getElementById("divBlase");
+        if (blase) blase.innerHTML = "" + artikelZaehler;
+        ladeProdukte();
     }
 
     async function ladeProdukte(): Promise<void> {
@@ -87,36 +90,43 @@ namespace Aufgabe6 {
         // Artikelliste
         let dataUrl: string = "./data/shop_data.json";
         await communicate(dataUrl);
-        for (let i: number = 0; i < myProducts.length; i++) {
-            if (aktuelleKategorie == myProducts[i].kategorie) {
-                produkteErzeugen(myProducts[i]);
+        for (let i: number = 0; i < allProducts.length; i++) {
+            if (aktuelleKategorie == allProducts[i].kategorie) {
+                produkteErzeugen(allProducts[i]);
             }
             else if (aktuelleKategorie == "") {
-                produkteErzeugen(myProducts[i]);
+                produkteErzeugen(allProducts[i]);
             }
         }
     }
-    
-    window.onhashchange = locationHashChanged;  
+
+    window.onhashchange = locationHashChanged;
     window.onload = pageLoad;
-   
+
+
+
     //let warenkorbTotal: number = 0;
-    let artikelZaehler: number = 0;
+    let artikelZaehler: number = localStorage.getItem("artikelAnzahl");
     let warenkorbTotal: number = 0;
-    function handleClick(_event: Event): void  {
-        artikelZaehler ++;
+
+    function handleClick(_event: Event): void {
+        artikelZaehler++;
         if (artikelZaehler >= 0) {
             const blase = document.getElementById("divBlase");
             if (blase) blase.innerHTML = "" + artikelZaehler;
         }
+        localStorage.setItem("artikelAnzahl", artikelZaehler.toString());
         let produktId: string = (<HTMLDivElement>(<HTMLElement>_event.currentTarget).parentElement).getAttribute("id")!;
-        
-        
-    // Summe der Preise  
-        for (let i: number = 0; i < myProducts.length; i++) {
-            if (myProducts[i].id == produktId) {
-                warenkorbTotal = warenkorbTotal + myProducts[i].preis; 
+
+        // Summe der Preise  
+        for (let i: number = 0; i < allProducts.length; i++) {
+            if (allProducts[i].id == produktId) {
+                warenkorbTotal = warenkorbTotal + allProducts[i].preis;
+                produktAuswahl.push(allProducts[i]);
             }
         }
-        console.log("Aktuelle Warenkorb Summe: " + warenkorbTotal + "€");  
-    }}
+        warenkorbTotal = Math.round(warenkorbTotal * 100) / 100;
+        localStorage.setItem("warenkorbGesamtwert", warenkorbTotal.toString());
+        localStorage.setItem("warenkorbProdukte", JSON.stringify(produktAuswahl));
+    }
+}

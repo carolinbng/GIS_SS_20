@@ -9,11 +9,12 @@ namespace Aufgabe6 {
         kategorie: string;
     }
 
-    export let myProducts: Produkt[];
+    export let allProducts: Produkt[];
+    export let produktAuswahl: Produkt[] = [];
 
     export async function communicate(_url: RequestInfo): Promise<void> {
         let response1: Response = await fetch(_url);
         let response2: JSON = await response1.json();
-        myProducts = JSON.parse(JSON.stringify(response2));
+        allProducts = JSON.parse(JSON.stringify(response2));
     }
 }
