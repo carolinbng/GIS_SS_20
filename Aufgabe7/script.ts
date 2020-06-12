@@ -3,7 +3,7 @@ namespace Aufgabe6 {
     let aktuelleKategorie: string = "";
 
 
-    function produkteErzeugen(produkt: Produkt): void {
+    function produkteErzeugen(myProducts: Produkt): void {
         // Überschrift für die Blume/ Vase
         let artikelUeberschrift: HTMLElement = document.createElement("h2");
         // Unterscheide zwischen erster Blume und dem Rest
@@ -17,29 +17,29 @@ namespace Aufgabe6 {
         // Container für die Blume/ Vase
         let divArtikel: HTMLElement = document.createElement("div");
         divArtikel.setAttribute("class", "blume");
-        divArtikel.setAttribute("id", produkt.id);
+        divArtikel.setAttribute("id", myProducts.id);
 
         
         // Bild
         let imgArtikel: HTMLElement = document.createElement("img");
-        imgArtikel.setAttribute("src", produkt.bild);
+        imgArtikel.setAttribute("src", myProducts.bild);
         imgArtikel.setAttribute("alt", "toller Blumenstrauss");
 
         // Name der Blume/ Vase
         let artikelName: HTMLElement = document.createElement("h3");
-        artikelName.innerHTML = produkt.name;
+        artikelName.innerHTML = myProducts.name;
         
         // Beschreibung der Blume und Vase
         let artikelBeschreibung: HTMLElement = document.createElement("ul");
         let artikelBeschreibungInhalt: HTMLElement = document.createElement("li");
-        artikelBeschreibungInhalt.innerHTML = produkt.beschreibung;
+        artikelBeschreibungInhalt.innerHTML = myProducts.beschreibung;
         artikelBeschreibung.appendChild(artikelBeschreibungInhalt);
         let breakElement: HTMLElement = document.createElement("br");
 
         // Preis der Blume/ Vase
         let pPreis: HTMLElement = document.createElement("p");
         pPreis.setAttribute("class" , "Preis");
-        pPreis.innerHTML = produkt.preis + " €";
+        pPreis.innerHTML = myProducts.preis + " €";
 
         // Button für den Warenkorb
         let buttonWarenkorb: HTMLElement = document.createElement("button");
@@ -60,65 +60,45 @@ namespace Aufgabe6 {
         document.getElementById("artikelListe")?.appendChild(divArtikel);
     }
 
-    function locationHashChanged() {
+    function locationHashChanged(): void {
         let artikelListe = document.getElementById("artikelListe");
         if (artikelListe) {
             artikelListe.innerHTML = ""; }
-
-        if (location.hash) {
-            aktuelleKategorie = location.hash.split("#")[1];
-            if (aktuelleKategorie == "home") {
-                let artikelUeberschrift: HTMLElement = document.createElement("h2");
-                artikelUeberschrift.innerHTML = "Frische Blumen und Vasen";
-                document.getElementById("artikelListe")?.appendChild(artikelUeberschrift);
-            }
-            else {
-                let artikelUeberschrift: HTMLElement = document.createElement("h2");
-                artikelUeberschrift.innerHTML = aktuelleKategorie;
-                document.getElementById("artikelListe")?.appendChild(artikelUeberschrift);
-            }
-        }
-        for (let i: number = 0; i < produkt.length; i++) {
-            if (aktuelleKategorie == produkt[i].kategorie) {
-                produkteErzeugen(produkt[i]);
-            }
-            else if (aktuelleKategorie == "home") {
-                produkteErzeugen(produkt[i]);
-            }
-        }
+        ladeProdukte();
     }
 
-    function pageLoad() {
-        location.hash = "#home";
-        aktuelleKategorie = "home";
-        // Artikelliste
+    function pageLoad(): void {
+        ladeProdukte();  
+    }
+
+    async function ladeProdukte(): Promise<void> {
         if (location.hash) {
             aktuelleKategorie = location.hash.split("#")[1];
-            if (aktuelleKategorie == "home") {
-                let artikelUeberschrift: HTMLElement = document.createElement("h2");
-                artikelUeberschrift.innerHTML = "Frische Blumen und Vasen";
-                document.getElementById("artikelListe")?.appendChild(artikelUeberschrift);
-            }
-            else {
-                let artikelUeberschrift: HTMLElement = document.createElement("h2");
-                artikelUeberschrift.innerHTML = aktuelleKategorie;
-                document.getElementById("artikelListe")?.appendChild(artikelUeberschrift);
-            }
+            let artikelUeberschrift: HTMLElement = document.createElement("h2");
+            artikelUeberschrift.innerHTML = aktuelleKategorie;
+            document.getElementById("artikelListe")?.appendChild(artikelUeberschrift);
         }
-        for (let i: number = 0; i < produkt.length; i++) {
-            if (aktuelleKategorie == produkt[i].kategorie) {
-                produkteErzeugen(produkt[i]);
+        else {
+            let artikelUeberschrift: HTMLElement = document.createElement("h2");
+            artikelUeberschrift.innerHTML = "Frische Blumen und Vasen";
+            document.getElementById("artikelListe")?.appendChild(artikelUeberschrift);
+        }
+
+        // Artikelliste
+        let dataUrl: string = "./data/shop_data.json";
+        await communicate(dataUrl);
+        for (let i: number = 0; i < myProducts.length; i++) {
+            if (aktuelleKategorie == myProducts[i].kategorie) {
+                produkteErzeugen(myProducts[i]);
             }
-            else if (aktuelleKategorie == "home") {
-                produkteErzeugen(produkt[i]);
+            else if (aktuelleKategorie == "") {
+                produkteErzeugen(myProducts[i]);
             }
         }
     }
     
     window.onhashchange = locationHashChanged;  
     window.onload = pageLoad;
-
-
    
     //let warenkorbTotal: number = 0;
     let artikelZaehler: number = 0;
@@ -133,16 +113,10 @@ namespace Aufgabe6 {
         
         
     // Summe der Preise  
-        for (let i: number = 0; i < produkt.length; i++) {
-            if (produkt[i].id == produktId) {
-                warenkorbTotal = warenkorbTotal + produkt[i].preis; 
+        for (let i: number = 0; i < myProducts.length; i++) {
+            if (myProducts[i].id == produktId) {
+                warenkorbTotal = warenkorbTotal + myProducts[i].preis; 
             }
         }
         console.log("Aktuelle Warenkorb Summe: " + warenkorbTotal + "€");  
     }}
-
-
-
-
-
-

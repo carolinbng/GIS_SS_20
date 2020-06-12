@@ -8,19 +8,12 @@ namespace Aufgabe6 {
         preis: number;
         kategorie: string;
     }
-    
-    
-    
-    export let produkt: Produkt[];
+
+    export let myProducts: Produkt[];
 
     export async function communicate(_url: RequestInfo): Promise<void> {
         let response1: Response = await fetch(_url);
         let response2: JSON = await response1.json();
-        produkt = JSON.parse(JSON.stringify(response2));
-        
+        myProducts = JSON.parse(JSON.stringify(response2));
     }
-
-    }
-    
-        
-        
+}

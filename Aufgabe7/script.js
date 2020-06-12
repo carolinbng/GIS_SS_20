@@ -2,7 +2,7 @@
 var Aufgabe6;
 (function (Aufgabe6) {
     let aktuelleKategorie = "";
-    function produkteErzeugen(produkt) {
+    function produkteErzeugen(myProducts) {
         // Überschrift für die Blume/ Vase
         let artikelUeberschrift = document.createElement("h2");
         // Unterscheide zwischen erster Blume und dem Rest
@@ -16,24 +16,24 @@ var Aufgabe6;
         // Container für die Blume/ Vase
         let divArtikel = document.createElement("div");
         divArtikel.setAttribute("class", "blume");
-        divArtikel.setAttribute("id", produkt.id);
+        divArtikel.setAttribute("id", myProducts.id);
         // Bild
         let imgArtikel = document.createElement("img");
-        imgArtikel.setAttribute("src", produkt.bild);
+        imgArtikel.setAttribute("src", myProducts.bild);
         imgArtikel.setAttribute("alt", "toller Blumenstrauss");
         // Name der Blume/ Vase
         let artikelName = document.createElement("h3");
-        artikelName.innerHTML = produkt.name;
+        artikelName.innerHTML = myProducts.name;
         // Beschreibung der Blume und Vase
         let artikelBeschreibung = document.createElement("ul");
         let artikelBeschreibungInhalt = document.createElement("li");
-        artikelBeschreibungInhalt.innerHTML = produkt.beschreibung;
+        artikelBeschreibungInhalt.innerHTML = myProducts.beschreibung;
         artikelBeschreibung.appendChild(artikelBeschreibungInhalt);
         let breakElement = document.createElement("br");
         // Preis der Blume/ Vase
         let pPreis = document.createElement("p");
         pPreis.setAttribute("class", "Preis");
-        pPreis.innerHTML = produkt.preis + " €";
+        pPreis.innerHTML = myProducts.preis + " €";
         // Button für den Warenkorb
         let buttonWarenkorb = document.createElement("button");
         buttonWarenkorb.innerHTML = "In den Warenkorb";
@@ -55,51 +55,32 @@ var Aufgabe6;
         if (artikelListe) {
             artikelListe.innerHTML = "";
         }
-        if (location.hash) {
-            aktuelleKategorie = location.hash.split("#")[1];
-            if (aktuelleKategorie == "home") {
-                let artikelUeberschrift = document.createElement("h2");
-                artikelUeberschrift.innerHTML = "Frische Blumen und Vasen";
-                document.getElementById("artikelListe")?.appendChild(artikelUeberschrift);
-            }
-            else {
-                let artikelUeberschrift = document.createElement("h2");
-                artikelUeberschrift.innerHTML = aktuelleKategorie;
-                document.getElementById("artikelListe")?.appendChild(artikelUeberschrift);
-            }
-        }
-        for (let i = 0; i < Aufgabe6.produkt.length; i++) {
-            if (aktuelleKategorie == Aufgabe6.produkt[i].kategorie) {
-                produkteErzeugen(Aufgabe6.produkt[i]);
-            }
-            else if (aktuelleKategorie == "home") {
-                produkteErzeugen(Aufgabe6.produkt[i]);
-            }
-        }
+        ladeProdukte();
     }
     function pageLoad() {
-        location.hash = "#home";
-        aktuelleKategorie = "home";
-        // Artikelliste
+        ladeProdukte();
+    }
+    async function ladeProdukte() {
         if (location.hash) {
             aktuelleKategorie = location.hash.split("#")[1];
-            if (aktuelleKategorie == "home") {
-                let artikelUeberschrift = document.createElement("h2");
-                artikelUeberschrift.innerHTML = "Frische Blumen und Vasen";
-                document.getElementById("artikelListe")?.appendChild(artikelUeberschrift);
-            }
-            else {
-                let artikelUeberschrift = document.createElement("h2");
-                artikelUeberschrift.innerHTML = aktuelleKategorie;
-                document.getElementById("artikelListe")?.appendChild(artikelUeberschrift);
-            }
+            let artikelUeberschrift = document.createElement("h2");
+            artikelUeberschrift.innerHTML = aktuelleKategorie;
+            document.getElementById("artikelListe")?.appendChild(artikelUeberschrift);
         }
-        for (let i = 0; i < Aufgabe6.produkt.length; i++) {
-            if (aktuelleKategorie == Aufgabe6.produkt[i].kategorie) {
-                produkteErzeugen(Aufgabe6.produkt[i]);
+        else {
+            let artikelUeberschrift = document.createElement("h2");
+            artikelUeberschrift.innerHTML = "Frische Blumen und Vasen";
+            document.getElementById("artikelListe")?.appendChild(artikelUeberschrift);
+        }
+        // Artikelliste
+        let dataUrl = "./data/shop_data.json";
+        await Aufgabe6.communicate(dataUrl);
+        for (let i = 0; i < Aufgabe6.myProducts.length; i++) {
+            if (aktuelleKategorie == Aufgabe6.myProducts[i].kategorie) {
+                produkteErzeugen(Aufgabe6.myProducts[i]);
             }
-            else if (aktuelleKategorie == "home") {
-                produkteErzeugen(Aufgabe6.produkt[i]);
+            else if (aktuelleKategorie == "") {
+                produkteErzeugen(Aufgabe6.myProducts[i]);
             }
         }
     }
@@ -117,9 +98,9 @@ var Aufgabe6;
         }
         let produktId = _event.currentTarget.parentElement.getAttribute("id");
         // Summe der Preise  
-        for (let i = 0; i < Aufgabe6.produkt.length; i++) {
-            if (Aufgabe6.produkt[i].id == produktId) {
-                warenkorbTotal = warenkorbTotal + Aufgabe6.produkt[i].preis;
+        for (let i = 0; i < Aufgabe6.myProducts.length; i++) {
+            if (Aufgabe6.myProducts[i].id == produktId) {
+                warenkorbTotal = warenkorbTotal + Aufgabe6.myProducts[i].preis;
             }
         }
         console.log("Aktuelle Warenkorb Summe: " + warenkorbTotal + "€");
