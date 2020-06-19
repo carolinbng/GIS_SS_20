@@ -1,0 +1,11 @@
+body{
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.form-padding {
+    padding-top: 8px;
+}
+
+.submit-padding {
+    padding-top: 20px;
+}

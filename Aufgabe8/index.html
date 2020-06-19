@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Versandadresse</h1>
+    <form>
+        <div class="form-padding">
+            <label for="fname">Vorname:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+        </div>
+        <div class="form-padding">
+            <label for="lname">Nachname:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+        </div>
+        <div class="form-padding">
+            <label for="street">Straße:</label><br>
+            <input type="text" id="fstreet" name="fstreet"><br>
+        </div>
+        <div class="form-padding">
+            <label for="ort">Postleitzahl:</label><br>
+            <input type="text" id="ort" name="ort"><br>
+        </div>
+        <div class="form-padding">
+            <label for="start">Gewünschtes Lieferdatum</label><br>
+            <input type="date" id="shipping" name="shipping" value="2020-06-19" min="2020-06-19" max="2020-12-24"><br>
+        </div>
+        <div class="form-padding">
+            <input type="checkbox" id="present" name="present" value="yes">
+            <label for="present">Als Geschenk verpacken</label><br>
+        </div>
+        <div class="submit-padding">
+            <button id="submitBtn" type="button">Jetzt kaufen</button>
+        </div>
+        
+
+
+    </form>
+
+</body>
+
+</html>
