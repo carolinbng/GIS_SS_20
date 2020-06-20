@@ -13,4 +13,3 @@ var Aufgabe8;
         console.log("Ich habe das zurück bekommen:", responseText);
     }
 })(Aufgabe8 || (Aufgabe8 = {}));
-//# sourceMappingURL=index.js.map
