@@ -6,6 +6,20 @@ body{
     padding-top: 8px;
 }
 
-.submit-padding {
-    padding-top: 20px;
+
+#submitBtn{
+float: none;
+background-color: rgba(160, 150, 158, 0.863);
+padding:10px 5px;
+color: white;
+border-radius: 0;
+border-color: rgba(94, 94, 94, 0.863);
+font-size: large;
+margin-bottom: 5px;
+font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+#submitBtn:hover{
+    background-color: white;
+    color:rgba(94, 94, 94, 0.863);
 }
