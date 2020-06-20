@@ -27,7 +27,9 @@ var A08Server;
     function handleRequest(_request, _response) {
         // Sobald Funktion aufgerufen wird, gibt die Konsole "I hear voices!" aus.
         console.log("I hear voices!");
-        console.log(_request.url);
+        const queryString = _request.url;
+        // Gebe query string in Konsole aus.
+        console.log(queryString);
         // Sobald eine Anfrage kommt, wird folgender Inhalt diesem zurückgeschickt:
         // Header für Antwort (Was für eine Art von Inhalt ist unsere Antwort)
         _response.setHeader("content-type", "text/html; charset=utf-8");
