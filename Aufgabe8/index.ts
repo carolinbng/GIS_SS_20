@@ -5,7 +5,7 @@ document.getElementById("submitBtn")?.addEventListener("click", submit);
 async function submit(): Promise<void> {
     let formData: FormData = new FormData(document.forms[0]);
    
-    let url: string = "http://127.0.0.1:8100";
+    let url: string = "https://testgisss2020.herokuapp.com/";
     let query: URLSearchParams = new URLSearchParams(<any>formData);
     url = url + "?" + query.toString();
 
