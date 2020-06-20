@@ -8,7 +8,9 @@ var Aufgabe8;
         let url = "https://testgisss2020.herokuapp.com/";
         let query = new URLSearchParams(formData);
         url = url + "?" + query.toString();
-        await fetch(url);
+        let serverResponse = await fetch(url);
+        let responseText = await serverResponse.text();
+        console.log("Ich habe das zurück bekommen:", responseText);
     }
 })(Aufgabe8 || (Aufgabe8 = {}));
 //# sourceMappingURL=index.js.map

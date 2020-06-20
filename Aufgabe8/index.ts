@@ -8,8 +8,9 @@ async function submit(): Promise<void> {
     let url: string = "https://testgisss2020.herokuapp.com/";
     let query: URLSearchParams = new URLSearchParams(<any>formData);
     url = url + "?" + query.toString();
-
-    await fetch(url);
+    let serverResponse: Response = await fetch(url);
+    let responseText: string = await serverResponse.text();
+    console.log("Ich habe das zurück bekommen:", responseText);
 }
 
 }
