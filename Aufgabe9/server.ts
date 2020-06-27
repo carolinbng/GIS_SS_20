@@ -1,6 +1,5 @@
 import * as Http from "http";
 import * as url from "url";
-import { Kunde } from './data';
 
 export namespace A08Server {
   // Ausgabe in der Konsole, Server startet
