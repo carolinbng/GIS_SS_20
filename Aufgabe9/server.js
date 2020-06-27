@@ -30,6 +30,7 @@ var A08Server;
         let q = url.parse(adresse, true);
         /*Die query Eigenschaft gibt ein Ojekt zurück, dass alle query-string Parameter als Eigenschaften besitzt. So können beliebig gesendete Attribute ausgelesen werden:*/
         let qdata = q.query;
+        console.log(q.pathname);
         // Sobald eine Anfrage kommt, wird folgender Inhalt diesem zurückgeschickt:
         // Header für Antwort (Was für eine Art von Inhalt ist unsere Antwort)
         _response.setHeader("content-type", "text/html; charset=utf-8");
