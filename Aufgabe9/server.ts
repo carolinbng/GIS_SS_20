@@ -26,7 +26,6 @@ export namespace A08Server {
     console.log("Listening");
   }
 
-    
   function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): void {
 
     const adresse = _request.url;
@@ -34,22 +33,22 @@ export namespace A08Server {
 
     /*Die query Eigenschaft gibt ein Ojekt zurück, dass alle query-string Parameter als Eigenschaften besitzt. So können beliebig gesendete Attribute ausgelesen werden:*/
     let qdata = q.query;
-    console.log(q.pathname);
+
     // Sobald eine Anfrage kommt, wird folgender Inhalt diesem zurückgeschickt:
     // Header für Antwort (Was für eine Art von Inhalt ist unsere Antwort)
     _response.setHeader("content-type", "text/html; charset=utf-8");
     _response.setHeader("Access-Control-Allow-Origin", "*");
     // Man schickt dem Anforderer seine eigene URL zurück
     if (q.pathname == "/html") {
-        for (let key in qdata) {
-          _response.write("<div>" + key + " : " + qdata[key] + "</div>");
+      for (let key in qdata) {
+        _response.write("<div>" + key + " : " + qdata[key] + "</div>");
       }
     }
 
     else if (q.pathname == "/json") {
       let jsonString: string = JSON.stringify(qdata);
       _response.write(jsonString);
-    } 
+    }
 
     else {
       _response.write("Was geht?");
