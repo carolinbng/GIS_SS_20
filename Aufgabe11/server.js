@@ -6,13 +6,13 @@ const url = require("url");
 const Mongo = require("mongodb");
 var A11Server;
 (function (A11Server) {
-    let dbUrl = "mongodb+srv://test_user:test2105@cluster11.hf6zk.mongodb.net/Aufgabe11?retryWrites=true&w=majority";
+    let dbUrl = "mongodb+srv://test_user:tester2105@cluster11.hf6zk.mongodb.net/Aufgabe11?retryWrites=true&w=majority";
     let kundendaten;
     async function connectToDatabase(_url) {
         let options = { useNewUrlParser: true, useUnifiedTopology: true };
         let mongoClient = new Mongo.MongoClient(_url, options);
         await mongoClient.connect();
-        kundendaten = mongoClient.db("Test1").collection("Kundendaten");
+        kundendaten = mongoClient.db("Aufgabe11").collection("Kundendaten");
         if (kundendaten != undefined) {
             console.log("Datenbank verbunden");
         }

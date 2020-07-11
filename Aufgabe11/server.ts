@@ -5,7 +5,7 @@ import { PassThrough } from "stream";
 
 export namespace A11Server {
 
-  let dbUrl = "mongodb+srv://test_user:test2105@cluster11.hf6zk.mongodb.net/Aufgabe11?retryWrites=true&w=majority";
+  let dbUrl = "mongodb+srv://test_user:tester2105@cluster11.hf6zk.mongodb.net/Aufgabe11?retryWrites=true&w=majority";
 
   let kundendaten: Mongo.Collection;
 
@@ -14,7 +14,7 @@ export namespace A11Server {
     let options: Mongo.MongoClientOptions = { useNewUrlParser: true, useUnifiedTopology: true };
     let mongoClient: Mongo.MongoClient = new Mongo.MongoClient(_url, options);
     await mongoClient.connect();
-    kundendaten = mongoClient.db("Test1").collection("Kundendaten");
+    kundendaten = mongoClient.db("Aufgabe11").collection("Kundendaten");
     if (kundendaten != undefined) {
       console.log("Datenbank verbunden");
     }
