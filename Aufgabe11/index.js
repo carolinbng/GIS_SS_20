@@ -8,7 +8,7 @@ var Aufgabe8;
         let btnId = _event.currentTarget.getAttribute("id");
         let formData = new FormData(document.forms[0]);
         let query = new URLSearchParams(formData);
-        let url = "https://testgisss2020.herokuapp.com/";
+        let url = "https://testgisss2020.herokuapp.com";
         if (btnId == "submitBtnSend") {
             url = url + "/send" + "?" + query.toString();
             let serverResponse = await fetch(url);

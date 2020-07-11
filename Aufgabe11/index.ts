@@ -7,7 +7,7 @@ namespace Aufgabe8 {
         let btnId: string = (<HTMLDivElement>(<HTMLElement>_event.currentTarget)).getAttribute("id")!;
         let formData: FormData = new FormData(document.forms[0]);
         let query: URLSearchParams = new URLSearchParams(<any>formData);
-        let url: string = "https://testgisss2020.herokuapp.com/";
+        let url: string = "https://testgisss2020.herokuapp.com";
         if (btnId == "submitBtnSend") {
             url = url + "/send" + "?" + query.toString();
             let serverResponse: Response = await fetch(url);
