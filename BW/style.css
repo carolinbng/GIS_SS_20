@@ -701,10 +701,10 @@ body, html {
         color: rgb(255, 255, 255); /* White text color */
     }
     
-    .adobe1 {width: 90%; background-color: #ffffff;} 
-    .adobe2 {width: 85%; background-color: #ffffff;}
-    .adobe3 {width: 89%; background-color: #ffffff;} 
-    .adobe4 {width: 88%; background-color: #ffffff;} 
+    .adobe1 {width: 70%; background-color: #ffffff;} 
+    .adobe2 {width: 60%; background-color: #ffffff;}
+    .adobe3 {width: 50%; background-color: #ffffff;} 
+    .adobe4 {width: 60%; background-color: #ffffff;} 
     .ms {width: 90%; background-color: #ffffff;} 
     
     .deutsch {width: 100%; background-color: #ffffff;} 
